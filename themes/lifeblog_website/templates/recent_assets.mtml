@@ -1,0 +1,12 @@
+<mt:Blogs include_blogs="children"><mt:If tag="MTAssetCount"><mt:SetVar name="count_asset" value="1"></mt:If></mt:Blogs>
+<mt:If name="count_asset"><mt:Assets type="image" lastn="6" blog_ids="children" include_with_website="1"><mt:AssetsHeader>
+                        <div class="box">
+                            <h3 class="icon_star">アイテム</h3>
+                            <ul class="thumbs clearfix">
+</mt:AssetsHeader>
+                                <li><a href="<$mt:AssetURL$>"><img src="<$mt:AssetThumbnailURL square="1" width="76"$>" width="75" height="75" alt="写真" /></a></li>
+<mt:AssetsFooter>
+                            </ul>
+                        </div><!-- / box -->
+</mt:AssetsFooter></mt:Assets></mt:If>
+

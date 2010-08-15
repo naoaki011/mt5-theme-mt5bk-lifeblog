@@ -1,0 +1,49 @@
+<mt:SetVars>
+    website_id=<mt:BlogParentWebsite><$mt:BlogID$></mt:BlogParentWebsite>
+<mt:Unless name="datebased_archive">
+    limit=auto
+</mt:Unless>
+</mt:Setvars><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head><mt:Unless regex_replace="/\s*\n+/g","\n">
+        <$mt:Include module="ヘッダー" blog_id="$website_id"$>
+        <title><mt:BlogParentWebsite><$mt:WebsiteName escape="html"$></mt:BlogParentWebsite>: <$mt:ArchiveTitle escape="html"$>アーカイブ</title>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション" blog_id="$website_id"$>
+                <$mt:Include module="検索" blog_id="$website_id"$>
+            </div><!-- / header -->
+            <h1 class="blog"><mt:BlogParentWebsite><$mt:WebsiteName escape="html"$></mt:BlogParentWebsite></h1>
+            <p id="topicPath"><a href="<mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite>">HOME</a> &gt; <a href="<mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite>blog/">BLOG</a> &gt; <$mt:ArchiveTitle escape="html"$>アーカイブ</p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+<mt:Entries limit="$limit">
+                    <div class="entry">
+                        <h2><a href="<$mt:EntryPermalink$>"><$mt:EntryTitle escape="html"$></a></h2>
+                        <p class="data"><$mt:EntryDate format="%Y年%b月%e日%A %H:%M"$> | <a href="<$mt:EntryLink$>#comments"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="0 Comment"$></a> | <a href="<$mt:EntryLink$>#trackback"><$mt:EntryTrackbackCount singular="1 Trackback" plural="# Trackbacks" none="0 Trackback"$></a></p>
+<$mt:EntryBody$>
+<mt:If tag="EntryMore" convert_breaks="0">
+                        <p class="entry_more">続きを読む：<a href="<$mt:EntryPermalink$>"><$mt:EntryTitle escape="html"$></a></p>
+</mt:If>
+                    </div><!-- / entry -->
+</mt:Entries>
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="アーカイブ"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター" blog_id="$website_id"$>
+        </div><!-- / wrapper -->
+    </body>
+</html></mt:Unless>

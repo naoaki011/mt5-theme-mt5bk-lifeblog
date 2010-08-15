@@ -1,0 +1,124 @@
+<mt:SetVars>
+  page_title=サイトマップ
+</mt:SetVars><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head><mt:Unless regex_replace="/\s*\n+/g","\n">
+<!--
+  このテーマは「Creative Commons - 表示-継承 2.1 日本（http://creativecommons.org/licenses/by-sa/2.1/jp/）」
+  ライセンスでで配布されており、以下の人々に著作権および権利権があります。
+  蒲生 トシヒロ (GAMO, Toshihiro) http://www.dakiny.com/,
+  小野崎 直昭 (ONOZAKI, Naoaki) http://www.zelazny.mydns.jp/,
+  難波田 実香 (Mika Naniwada) http://kiasma.jp/,
+  柳 泰久 (Yasuhisa Yanagi) http://atstyle.biz/,
+  ※注意：このコメントを削除する行為は上記ライセンスの定めるところにより禁止されています。
+-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="generator" content="<$mt:ProductName version="1"$>" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <link rel="stylesheet" href="<$mt:WebsiteURL$>css/styles.css" type="text/css" media="screen,tv" />
+        <link rev="made" href="mailto:" />
+        <link rel="start" href="<$mt:WebsiteURL$>" title="ホーム" />
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+        <title>サイトマップ</title>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="blog"><$mt:WebsiteName escape="html"$></h1>
+            <p id="topicPath"><a href="<$mt:WebsiteURL$>">HOME</a> &gt; サイトマップ</p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+
+<ul>
+  <li class="home"><a href="<$mt:Link template="メインページ"$>">ホーム</a>
+
+<mt:Pages no_folder="1"><mt:PagesHeader>
+    <ul class="tree">
+</mt:PagesHeader>
+      <li class="tree"><a href="<$mt:PagePermalink$>" title="<$mt:PageTitle escape="html"$>"><$mt:PageTitle escape="html"$></a></li>
+<mt:PagesFooter>
+    </ul>
+</mt:PagesFooter></mt:Pages>
+
+<mt:TopLevelFolders><mt:FolderHeader>
+    <ul class="tree">
+</mt:FolderHeader>
+<mt:If tag="FolderCount">
+      <li class="tree"><mt:FolderLabel setvar="folder_label" /><$mt:FolderLabel escape="html"$>
+<mt:Pages folder="$folder_label"><mt:PagesHeader>
+        <ul class="tree">
+</mt:PagesHeader>
+          <li class="tree<mt:If name="__last__">_end</mt:If>"><a href="<$mt:PagePermalink$>" title="<$mt:PageTitle escape="html"$>"><$mt:PageTitle escape="html"$></a></li>
+<mt:PagesFooter>
+        </ul>
+</mt:PagesFooter></mt:Pages>
+<mt:SubFolderRecurse>
+      </li>
+</mt:If>
+<mt:FolderFooter>
+    </ul>
+</mt:FolderFooter></mt:TopLevelFolders>
+<mt:Blogs include_blogs="site">
+<mt:If tag="BlogEntryCount">
+    <ul class="tree">
+      <li class="tree"><a href="<$mt:BlogURL$>"><$mt:BlogName escape="html"$></a>
+<mt:TopLevelCategories><mt:SubCatIsFirst>
+        <ul class="tree">
+</mt:SubCatIsFirst>
+<mt:If tag="CategoryCount">
+          <li class="tree<mt:SubCatIsLast>_end</mt:SubCatIsLast>">
+            <a href="<$mt:CategoryArchiveLink$>">
+            <$mt:CategoryLabel escape="html"$></a> (<$mt:CategoryCount$>)
+<mt:Else>
+          <li class="tree<mt:SubCatIsLast>_end</mt:SubCatIsLast>"><$mt:CategoryLabel escape="html"$>
+</mt:Else>
+            <ul class="tree">
+<mt:Entries lastn="0">
+              <li class="tree<mt:EntriesFooter>_end</mt:EntriesFooter>">
+                <a href="<$mt:EntryPermalink$>"><$mt:EntryTitle escape="html"$></a></li>
+</mt:Entries>
+            </ul>
+</mt:If>
+<mt:SubCatsRecurse>
+          </li>
+<mt:SubCatIsLast>
+        </ul>
+</mt:SubCatIsLast></mt:TopLevelCategories>
+      </li>
+    </ul>
+</mt:If>
+</mt:Blogs>
+    <ul class="tree">
+      <li class="tree_end"><a href="<$mt:Link template="サイトマップ"$>">サイトマップ</a></li>
+    </ul">
+  </li>
+</ul>
+
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="メインサイドバー"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+    </body>
+</html></mt:Unless>
+

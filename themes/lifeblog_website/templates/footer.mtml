@@ -1,0 +1,10 @@
+<mt:SetVarTemplate name="License">
+<mt:WebsiteIfCCLicense>
+            <address>Some Rights Reserved Licensed under a <a href="<$mt:WebsiteCCLicenseURL$>">Creative Commons License</a>.</address>
+<mt:Else>
+            <address>Copyright &copy; <$mt:WebsiteName encode="html"$> All Rights Reserved.</address>
+</mt:WebsiteIfCCLicense>
+</mt:setVarTemplate>
+<mt:IfWebsite><$mt:Var name="License"$>
+<mt:Else><mt:BlogParentWebsite><$mt:Var name="License"$></mt:BlogParentWebsite>
+</mt:IfWebsite>

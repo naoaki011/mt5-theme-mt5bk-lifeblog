@@ -1,0 +1,64 @@
+<mt:SetVars>
+<mt:If name="comment_confirmation">
+    page_title=投稿しました
+    message=<p>コメントを投稿しました。</p>
+<mt:Else name="comment_pending">
+    page_title=コメントありがとうございます。
+    message=<p>コメントは現在承認されるまで公開を保留されています。</p>
+<mt:Else name="comment_error">
+    page_title=コメント投稿エラー
+    message=<p>コメントを投稿できませんでした。エラー: <$mt:ErrorMessage$></p>
+</mt:If>
+</mt:SetVars>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="generator" content="<$mt:ProductName version="1"$>" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <link rel="stylesheet" href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>css/styles.css" type="text/css" media="screen,tv" />
+        <script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var user = <$mt:UserSessionState$>;
+var is_preview = true;
+/* ]]> */
+</script>
+        <title><$mt:Var name="page_title"$></title>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="blog"><$mt:WebsiteName escape="html"$></h1>
+            <p id="topicPath"><a href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>">HOME</a> &gt; <a href="<mt:EntryLink>"><$mt:EntryTitle$></a> &gt; <$mt:Var name="page_title"$></</p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+                    <div class="entry">
+                        <h2><$mt:Var name="page_title"$></h2>
+                        <$mt:Var name="message"$>
+                        <p><a href="<mt:If name="comment_error">javascript:history.back()<mt:Else><$mt:EntryLink$></mt:If>">元の記事</a>に戻る</p>
+                    </div><!-- / entry -->
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="メインサイドバー"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+    </body>
+</html>
+

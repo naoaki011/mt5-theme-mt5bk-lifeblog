@@ -1,0 +1,16 @@
+<mt:IfPingsActive>
+                    <h4 class="level4" id="trackback"><$mt:EntryTrackbackCount singular="トラックバック(1)" plural="トラックバック(#)" none="トラックバック(0)"$></h4>
+<mt:IfPingsAccepted>
+                    <p>トラックバックURL: <$mt:EntryTrackbackLink$></p>
+</mt:IfPingsAccepted>
+<mt:Pings>
+<mt:PingsHeader>
+                    <div class="trackbacks">
+</mt:PingsHeader>
+                        <p><$mt:PingBlogName$> - <a href="<$mt:PingURL$>"><$mt:PingTitle$></a> (<$mt:PingDate$>)</p>
+                        <p><$mt:PingExcerpt$> <a href="<$mt:PingURL$>">続きを読む</a></p>
+<mt:PingsFooter>
+                    </div>
+</mt:PingsFooter>
+</mt:Pings>
+</mt:IfPingsActive>

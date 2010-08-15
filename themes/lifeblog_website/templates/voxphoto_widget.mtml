@@ -1,0 +1,21 @@
+<mt:ActionStreams service="vox" stream="photos" sort_by="created_on">
+<mt:StreamActionThumbnailURL setvar="photo_thumb" />
+<mt:If name="photo_thumb">
+<mt:SetVarBlock name="voxphoto_links{$__counter__}"><a href="<$mt:StreamActionURL escape="html"$>"><img src="<$mt:StreamActionThumbnailURL$>" alt="<$mt:StreamActionTitle escape="html"$>" /></a></mt:SetVarBlock><mt:SetVar name="photo_thumb" value="" />
+</mt:If>
+</mt:ActionStreams>
+
+<mt:Loop name="voxphoto_links" sort_by="key numeric">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_vox"><a href="<$mt:Var name="profile_urls{Vox}"$>">VoxPhoto</a></h3>
+                        <ul class="thumbs clearfix">
+</mt:If>
+<mt:If name="__counter__" le="4">
+                            <li><$mt:Var name="__value__"$></li>
+</mt:If>
+<mt:If name="__last__">
+                        </ul>
+                    </div><!-- / box -->
+</mt:If>
+</mt:Loop>

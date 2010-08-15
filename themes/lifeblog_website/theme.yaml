@@ -1,0 +1,457 @@
+#
+# LifeBlog Theme for Website.
+#
+# Design by Mika Naniwada & GAMO, Toshihirro.
+# IA by GAMO, Toshihirro.
+# MarkUp by Yasuhisa Yanagi
+# Create Theme by Naoaki Onozaki.
+#
+# License Under Creative Commons Attribution-Share Alike 2.1 Japan
+#
+id: lifeblog_website
+label: LifeBlogのテーマ
+name: LifeBlogのテーマ
+version: 1.0
+author_link: http://www.sbcr.jp/
+author_name: ソフトバンククリエイティブ
+class: website
+description: |
+  LifeBlogウェブサイトのためのテーマです。
+  このテーマはソフトバンククリエイティブより出版された、書籍「Movable Type 5 実践テクニック」のサンプルとして作成されました。
+  ライセンスは『Creative Commons - 表示-継承 2.1 日本』となります。
+required_components: 
+  actionstreams: 2.1
+  commercial: 1.50
+thumbnail_file: life-website.png
+thumbnail_file_medium: life-website-medium.png
+thumbnail_file_small: life-website-small.png
+elements: 
+  blog_static_files: 
+    component: core
+    importer: blog_static_files
+    data: 
+      - blogimg
+  custom_fields: 
+    component: commercial
+    importer: custom_fields
+    data: 
+      english_address: 
+        default: ''
+        description: "住んでいる場所を英語で入力してください\r\n記入例：Yokosuka, Kanagawa, Japan"
+        name: Address
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataEnglishAddress
+        type: text
+      english_name: 
+        default: ''
+        description: "必須項目です。名前を英語で入力します。\r\nトップページで表示されます。名前はハンドルでもかまいません。"
+        name: My Name
+        obj_type: page
+        options: ~
+        required: 1
+        tag: PageDataEnglishName
+        type: text
+      facebook_account: 
+        default: ''
+        description: ''
+        name: Facebookアカウント
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFacebookAccount
+        type: text
+      facebook_link: 
+        default: ''
+        description: ''
+        name: Facebookリンク
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFacebookLink
+        type: text
+      mail_address: 
+        default: ''
+        description: メールアドレスを公開する場合、ここに入力します。
+        name: 公開メールアドレス
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataMailaddress
+        type: text
+      mixi_account: 
+        default: ''
+        description: ''
+        name: mixiアカウント
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataMixiAccount
+        type: text
+      mixi_link: 
+        default: ''
+        description: ''
+        name: mixiリンク
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataMixiLink
+        type: text
+      present_address: 
+        default: ''
+        description: ''
+        name: 現住所
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataPresentAddress
+        type: text
+      prof_academic: 
+        default: ''
+        description: ''
+        name: 最終学歴
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataAcademic
+        type: text
+      prof_birthdate: 
+        default: ''
+        description: ''
+        name: 生年月日
+        obj_type: page
+        options: date
+        required: 0
+        tag: PageDataBirthDate
+        type: datetime
+      prof_bloodtype: 
+        default: 非表示
+        description: 血液型を選択してください。「非表示」を選択すると、血液型表示が行なわれません。
+        name: 血液型
+        obj_type: page
+        options: A型,B型,O型,AB型,非表示
+        required: 0
+        tag: PageDataBloodType
+        type: select
+      prof_employment: 
+        default: ''
+        description: ''
+        name: 勤務先
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataEmployment
+        type: text
+      prof_favbooks: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 好きな本
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFavBooks
+        type: textarea
+      prof_favmovie: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 好きな映画
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFavMovie
+        type: textarea
+      prof_favmusic: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 好きな音楽
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFavMusic
+        type: textarea
+      prof_favtvprogram: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 好きなテレビ
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFavTVProgram
+        type: textarea
+      prof_favwords: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 好きな言葉
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataFavWords
+        type: textarea
+      prof_handle: 
+        default: ''
+        description: ''
+        name: ハンドル
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataHandleName
+        type: text
+      prof_hometown: 
+        default: ''
+        description: ''
+        name: 出身地
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataHomeTown
+        type: text
+      prof_job: 
+        default: ''
+        description: ''
+        name: 職業・役職
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataJobs
+        type: text
+      prof_myhobby: 
+        default: ''
+        description: 複数の場合は改行してください。
+        name: 趣味・関心
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataHobby
+        type: textarea
+      prof_realname: 
+        default: ''
+        description: ''
+        name: 本名
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataRealName
+        type: text
+      prof_sex: 
+        default: 非公開
+        description: 性別を選択してください。「非公開」を選択すると、性別表示が行なわれません。
+        name: SEX
+        obj_type: page
+        options: male,female,非公開
+        required: 0
+        tag: PageDataSex
+        type: radio
+      skype_account: 
+        default: ''
+        description: ''
+        name: Skypeアカウント
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataSkypeAccount
+        type: text
+      skype_link: 
+        default: ''
+        description: ''
+        name: Skypeリンク
+        obj_type: page
+        options: ~
+        required: 0
+        tag: PageDataSkypeLink
+        type: text
+  default_pages: 
+    component: core
+    importer: default_pages
+    data: 
+      index: 
+        title: プロフィール
+        text: |
+          <p><strong>以下の文章はサンプルです。内容を適切に書き換えてください。</strong></p>
+          <p>いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす</p>
+          <p>色は匂へど 散りぬるを 我が世誰ぞ 常ならむ 有為の奥山 今日越えて 浅き夢見じ 酔ひもせず</p>
+        tags: @profile
+        folder: profile
+  default_folders: 
+    component: core
+    importer: default_folders
+    data: 
+      profile: 
+        description: プロフィールフォルダ
+        label: プロフィール
+  template_set: 
+    component: core
+    importer: template_set
+    data: 
+      base_path: templates
+      label: LifeBlogウェブサイトテーマ
+      templates: 
+        index: 
+          content_css: 
+            label: content.css
+            outfile: css/content.css
+            rebuild_me: 1
+          feed_recent: 
+            label: 最新記事のフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          fonts_css: 
+            label: fonts.css
+            outfile: css/fonts.css
+            rebuild_me: 1
+          javascript: 
+            label: JavaScript
+            outfile: js/mt.js
+            rebuild_me: 1
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+          reset_css: 
+            label: reset.css
+            outfile: css/reset.css
+            rebuild_me: 1
+          rsd: 
+            label: RSD
+            outfile: rsd.xml
+            rebuild_me: 1
+          sitemap: 
+            label: サイトマップ
+            outfile: sitemap/index.html
+            rebuild_me: 1
+          styles: 
+            label: スタイルシート
+            outfile: css/styles.css
+            rebuild_me: 1
+        module: 
+          categories: 
+            label: カテゴリ
+          comment_detail: 
+            label: コメント詳細
+          comment_form: 
+            label: コメント入力フォーム
+          comments: 
+            label: コメント
+          footer: 
+            label: フッター
+          header: 
+            label: ヘッダー
+          navigation: 
+            label: ナビゲーション
+          profile_list: 
+            label: Profiles
+          search: 
+            label: 検索
+          tags: 
+            label: タグ
+          trackbacks: 
+            label: トラックバック
+        page: 
+          page: 
+            label: ウェブページ
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%c/%f"
+                preferred: 1
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+        widget: 
+          amebanow_widget: 
+            label: Amebaなうウィジェット
+          booklog_widget: 
+            label: ブクログウィジェット
+          calendar: 
+            label: カレンダー
+          category_archive_list: 
+            label: カテゴリアーカイブ
+          delicious_widget: 
+            label: Deliciousウィジェット
+          flickr_widget: 
+            label: Flickrウィジェット
+          googlebuzz_widget: 
+            label: GoogleBuzzウィジェット
+          hatebed_widget: 
+            label: 被はてブウィジェット
+          hatebu_widget: 
+            label: はてなブックマークウィジェット
+          hateda_widget: 
+            label: はてなダイアリーウィジェット
+          hatenafoto_widget: 
+            label: はてなフォトウィジェット
+          lastfm_widget: 
+            label: Last.FMウィジェット
+          monthly_archive_list: 
+            label: 月別アーカイブ
+          nicovideo_widget: 
+            label: ニコニコ動画ウィジェット
+          otherblogs_widget: 
+            label: 外部ブログウィジェット
+          picasa_widget: 
+            label: Picasaウィジェット
+          powered_by: 
+            label: Powered By
+          recent_assets: 
+            label: アイテム
+          recent_entries: 
+            label: 最近のブログ記事
+          recent_entries_expanded: 
+            label: 最近のブログ記事 (拡張)
+          syndication: 
+            label: 購読
+          tag_cloud: 
+            label: タグクラウド
+          tumblr_widget: 
+            label: Tumblrウィジェット
+          twitter_widget: 
+            label: Twitterウィジェット
+          voxblog_widget: 
+            label: Voxブログウィジェット
+          voxphoto_widget: 
+            label: VoxPhotoウィジェット
+          youtube_widget: 
+            label: YouTUBEウィジェット
+        widgetset: 
+          blog_activity: 
+            label: アクティビティ
+            order: 1000
+            widgets: 
+              - カレンダー
+              - カテゴリアーカイブ
+              - 月別アーカイブ
+              - Powered By
+              - 購読
+          main_sidebar: 
+            label: メインサイドバー
+            order: 1000
+            widgets: 
+              - 最近のブログ記事
+              - アイテム
+              - タグクラウド
+          my_resource: 
+            label: My Resource
+            order: 1000
+            widgets: 
+              - 最近のブログ記事 (拡張)
+              - Twitterウィジェット
+          my_webservice: 
+            label: My Web Service
+            order: 1000
+            widgets: 
+              - Flickrウィジェット
+              - Deliciousウィジェット
+              - Tumblrウィジェット
+              - YouTUBEウィジェット
+              - Last.FMウィジェット
+              - Powered By

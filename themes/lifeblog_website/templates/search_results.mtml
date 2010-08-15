@@ -1,0 +1,168 @@
+<mt:SetVars>
+    page_title=検索結果
+    title=<$mt:BlogName encode_html="1"$>: 検索結果
+<mt:IfStraightSearch>
+    result_title=「<$mt:SearchString$>」と一致するもの
+</mt:IfStraightSearch>
+<mt:IfTagSearch>
+    result_title=タグ「<$mt:SearchString$>」が付けられているもの
+</mt:IfTagSearch>
+<mt:NoSearch>
+    result_title=検索語句の入力例
+</mt:NoSearch>
+</mt:SetVars><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="generator" content="<$mt:ProductName version="1"$>" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <link rel="stylesheet" href="<$mt:WebsiteURL$>css/styles.css" type="text/css" media="screen,tv" />
+        <link rev="made" href="" />
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+        <script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
+        <title>検索結果 - <$mt:WebsiteName escape="html"$></title>
+        <script type="text/javascript">
+/* <![CDATA[ */
+var user = <$mt:UserSessionState$>;
+<mt:IfMoreResults>
+function getResults(page) {
+    page = parseInt(page);
+    if (timer) window.clearTimeout(timer);
+    var xh = mtGetXmlHttp();
+    if (!xh) return false;
+    var res = results[page];
+    if (!res) return;
+    var url = res['next_url'];
+    if (!url) return;
+
+    xh.open('GET', url + '&format=js', true);
+    xh.onreadystatechange = function() {
+        if ( xh.readyState == 4 ) {
+            if ( xh.status && ( xh.status != 200 ) ) {
+                // error - ignore
+            } else {
+                try {
+                    var page_results = eval("(" + xh.responseText + ")");
+                    if ( page_results['error'] == null )
+                        results[page + 1] = page_results['result'];
+                } catch (e) {
+                }
+            }
+        }
+    };
+    xh.send(null);
+}
+
+function swapContent(direction) {
+    if ( direction == undefined ) direction = 1;
+    var page_span = document.getElementById('current-page');
+    if (!page_span) return true;
+    var next_page = direction + parseInt(page_span.innerHTML);
+    var res = results[next_page];
+    if (!res) return true;
+    var content = res['content'];
+    if (!content) return true;
+    var div = document.getElementById('search-results');
+    if (!div) return true;
+    div.innerHTML = content;
+    timer = window.setTimeout("getResults(" + next_page + ")", 1*1000);
+    window.scroll(0, 0);
+    return false;
+}
+<mt:Else>
+<mt:IfPreviousResults>
+function swapContent(direction) {
+    return true;
+}
+</mt:IfPreviousResults>
+</mt:IfMoreResults>
+
+/* ]]> */
+        </script>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="blog"><$mt:WebsiteName escape="html"$></h1>
+            <p id="topicPath"><a href="<$mt:WebsiteURL$>">HOME</a> &gt; 検索結果</p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+                    <div class="entry">
+                        <h2><$mt:Var name="result_title"$></h2>
+<mt:SetVarTemplate id="search_results" name="search_results"><mt:SearchResults><mt:SearchResultsHeader>
+                        <div class="search-results-container autopagerize_page_element">
+</mt:SearchResultsHeader>
+                            <div class="entry">
+                                <h3><a href="<$mt:EntryPermalink$>" rel="bookmark"><$mt:EntryTitle$></a></h3>
+                                <div><$mt:EntryBody$></div>
+<mt:If tag="EntryMore" convert_breaks="0">
+                                <div>続きを読む: <a href="<$mt:EntryPermalink$>#more" rel="bookmark"><$mt:EntryTitle$></a></div>
+</mt:If>
+                            </div>
+<mt:SearchResultsFooter>
+                        </div><div class="autopagerize_insert_before"></div>
+<mt:Ignore>Used with the ajax search capability of the new search class</mt:Ignore>
+<mt:IfMoreResults>
+                        <div class="content-nav">
+                            <mt:IfPreviousResults><a href="<$mt:PreviousLink$>" rel="prev" onclick="return swapContent(-1);">&lt; 前</a>&nbsp;&nbsp;</mt:IfPreviousResults><mt:PagerBlock><mt:IfCurrentPage><$mt:Var name="__value__"$><mt:Else><a href="<$mt:PagerLink$>"><$mt:Var name="__value__"$></a></mt:IfCurrentPage><mt:Unless name="__last__">&nbsp;</mt:Unless></mt:PagerBlock><mt:IfMoreResults>&nbsp;&nbsp;<a href="<$mt:NextLink$>" rel="next" onclick="return swapContent();">次 &gt;</a></mt:IfMoreResults>
+                        </div>
+</mt:IfMoreResults>
+</mt:SearchResultsFooter></mt:SearchResults></mt:SetVarTemplate>
+<mt:SetVarBlock name="example_input">
+                        <p>すべての単語が順序に関係なく検索されます。スペースはAND検索として扱われます。スペースを含むフレーズで検索したいときは引用符で囲んでください。</p>
+                        <blockquote><p><code>"movable type"</code></p></blockquote>
+                        <p>AND以外にも、OR、NOTを入れることで論理検索を行うこともできます。</p>
+                        <blockquote><p><code>個人 OR 出版</code></p><p><code>個人 NOT 出版</code></p></blockquote>
+</mt:SetVarBlock>
+<mt:NoSearchResults>
+                        <p>「<$mt:SearchString$>」と一致する結果は見つかりませんでした。</p>
+                        <$mt:Var name="example_input"$>
+<mt:Else>
+                        <$mt:Var name="search_results"$>
+</mt:NoSearchResults>
+<mt:NoSearch>
+                        <$mt:Var name="example_input"$>
+</mt:NoSearch>
+                    </div><!-- / entry -->
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="メインサイドバー"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+<mt:Ignore>Used with the ajax search capability of the new search class</mt:Ignore>
+<mt:IfMoreResults>
+<script type="text/javascript">
+<!--
+var div = document.getElementById('search-results');
+var results = {
+    '<$mt:CurrentPage$>': {
+        'content': div.innerHTML,
+        'next_url': '<$mt:NextLink$>'
+    }
+};
+var timer = window.setTimeout("getResults(" + <$mt:CurrentPage$> + ")", 1*1000);
+//-->
+</script>
+</mt:IfMoreResults>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<mt:ActionStreams service="youtube">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_youtube"><a href="<$mt:Var name="profile_urls{YouTube}"$>">You Tube</a></h3>
+                        <div class="inner">
+                            <ul>
+</mt:If>
+<mt:If name="__counter__" le="1">
+<mt:SetVarBlock name="videoid"><$mt:StreamActionURL regex_replace="/http\://[^\.\/]+\.youtube\.(jp|com)\/watch\?v=([0-9a-zA-Z_\-]{11}).*/","$2" $></mt:SetVarBlock>
+                                <li><object width="170" height="142" type="application/x-shockwave-flash" data="http://www.youtube.com/v/<$mt:Var name="videoid"$>"><param value="http://www.youtube.com/v/<$mt:Var name="videoid"$>" name="movie" /><param value="transparent" name="wmode" /><$mt:StreamActionTitle escape="html"$></object></li>
+</mt:If>
+<mt:If name="__last__">
+                            </ul>
+                        </div><!-- / inner -->
+                   </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>

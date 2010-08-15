@@ -1,0 +1,294 @@
+<mt:setvar name="list_profileevent" value="1">
+<mt:setvar name="page_title" value="<__trans phrase="Action Stream">">
+
+<mt:setvar name="form_id" value="profileevent-listing-form">
+<mt:setvarblock name="html_head" append="1">
+<link rel="stylesheet" type="text/css" href="<mt:var name="static_uri">plugins/ActionStreams/css/action-streams.css" />
+    <script type="text/javascript">
+    <!--
+
+    var tableSelect;
+    function init() {
+        // set up table select awesomeness
+        tableSelect = new TC.TableSelect("profileevent-listing-table");
+        tableSelect.rowSelect = true;
+
+        jQuery('button.mt-<mt:var name="form_id">-action').mtDoPluginAction({
+            id: '<mt:var name="form_id">',
+            plural: '<mt:if name="object_label_plural"><mt:var name="object_label_plural" escape="js"></mt:if>',
+            phrase: '<__trans phrase="to act upon" escape="js">'
+        });
+
+    }
+
+    TC.attachLoadEvent(init);
+
+    function finishPluginActionAll(f, action) {
+        var select_all = getByID('select-all-checkbox')
+        if (select_all) {
+            select_all.checked = true;
+            tableSelect.select(select_all);
+        }
+        return doForMarkedInThisWindow(f, '', 'profileevents', 'id', 'itemset_action',
+            {'action_name': action}, 'to act upon');
+    }
+
+    function toggleFilter() {
+        var filterActive = getByID("filter-title");
+        if (filterActive.style.display == "none") {
+            filterActive.style.display = "block";
+            getByID("filter-select").style.display = "none";
+        } else {
+            filterActive.style.display = "none";
+            getByID("filter-select").style.display = "block";
+            <mt:unless name="filter">setFilterCol('service');</mt:unless>
+        }
+    }
+
+    function setFilterCol(choice) {
+        var sel = getByID('filter-select');
+        if (!sel) return;
+        sel.className = "filter-" + choice;
+        if (choice != 'none') {
+            var fld = getByID('filter-col');
+            if (choice == 'service')
+                fld.selectedIndex = 0;
+            else if (choice == 'visible')
+                fld.selectedIndex = 1;
+            else if (choice == 'exacttag')
+                fld.selectedIndex = 2;
+            else if (choice == 'normalizedtag')
+                fld.selectedIndex = 3;
+            else if (choice == 'category_id')
+                fld.selectedIndex = 4;
+            else if (choice == 'asset_id')
+                fld.selectedIndex = <mt:if name="category_loop">5<mt:else>4</mt:if>;
+            col_span = getByID("filter-text-col");
+            if (fld.selectedIndex > -1 && col_span)
+                col_span.innerHTML = '<strong>' + fld.options[fld.selectedIndex].text + '</strong>';
+        }
+    }
+
+   function enableFilterButton(fld) {
+        if (fld && (fld.id == "filter-col")) {
+            var opt = fld.options[fld.selectedIndex];
+            if (opt.value == 'author_id') {
+                var authfld = getByID("author_id-val");
+                var authopt = authfld.options[authfld.selectedIndex];
+                if (authopt.value == "") {
+                    getByID("filter-button").style.display = "none";
+                    return;
+                }
+            }
+        }
+        getByID("filter-button").style.display = "inline";
+    }
+
+    // -->
+    </script>
+
+    <style type="text/css">
+    <!--
+        #filter-visible, #filter-service { display: none }
+        .filter-visible #filter-visible,
+        .filter-service #filter-service  { display: inline }
+    
+        #profileevent-listing-table .date { white-space: nowrap; }
+        #profileevent-listing-table .service { width: 8em; }
+        #main-content { padding-top: 5px; }
+        .content-nav #main-content .msg { margin-left: 0px; }
+
+        <mt:loop name="service_styles">
+        .service-<mt:var name="service_type"> { background-image: url(<mt:var name="service_icon">); }
+        </mt:loop>
+    // -->
+    </style>
+</mt:setvarblock>
+
+<mt:setvarblock name="content_nav">
+    <mt:include name="include/users_content_nav.tmpl">
+</mt:setvarblock>
+
+<mt:setvarblock name="system_msg">
+    <mt:if name="saved_deleted">
+        <mtapp:statusmsg
+            id="saved_deleted"
+            class="success">
+            <__trans phrase="The selected events were deleted.">
+        </mtapp:statusmsg>
+    </mt:if>
+    <mt:if name="hidden">
+        <mtapp:statusmsg
+            id="hidden"
+            class="success">
+            <__trans phrase="The selected events were hidden.">
+        </mtapp:statusmsg>
+    </mt:if>
+    <mt:if name="shown">
+        <mtapp:statusmsg
+            id="shown"
+            class="success">
+            <__trans phrase="The selected events were shown.">
+        </mtapp:statusmsg>
+    </mt:if>
+    <mt:if name="all_hidden">
+        <mtapp:statusmsg
+            id="all_hidden"
+            class="success">
+            <__trans phrase="All action stream events were hidden.">
+        </mtapp:statusmsg>
+    </mt:if>
+    <mt:if name="all_shown">
+        <mtapp:statusmsg
+            id="all_shown"
+            class="sucess">
+            <__trans phrase="All action stream events were shown.">
+        </mtapp:statusmsg>
+    </mt:if>
+</mt:setvarblock>
+
+<mt:setvarblock name="html_body_footer">
+    <mt:include name="include/display_options.tmpl">
+</mt:setvarblock>
+
+<mt:setvarblock name="action_buttons">
+    <button
+        onclick="doForMarkedInThisWindow(getByID('profileevent-listing-form'), '<__trans phrase="event">', '<__trans phrase="events">', 'id', 'itemset_hide_events'); return false"
+        accesskey="h"
+        title="<__trans phrase="Hide selected events (h)">"
+        ><__trans phrase="Hide"></button>
+    <button
+        onclick="doForMarkedInThisWindow(getByID('profileevent-listing-form'), '<__trans phrase="event">', '<__trans phrase="events">', 'id', 'itemset_show_events'); return false"
+        accesskey="h"
+        title="<__trans phrase="Show selected events (h)">"
+        ><__trans phrase="Show"></button>
+</mt:setvarblock>
+
+<mt:setvarblock name="related_content">
+    <mtapp:widget
+        id="useful-links"
+        label="<__trans phrase="Useful links">">
+        <ul>
+            <li><a href="<$mt:var name="mt_url"$>?__mode=view&amp;_type=author&amp;id=<$mt:var name="id"$>"><__trans phrase="Profile"></a></li>
+            <li><a href="<$mt:var name="mt_url"$>?__mode=other_profiles&amp;id=<$mt:var name="id"$>"><__trans phrase="Other Profiles"></a></li>
+        </ul>
+    </mtapp:widget>
+</mt:setvarblock>
+
+<mt:include name="include/header.tmpl">
+
+<div class="listing-filter">
+    <div class="listing-filter-inner inner pkg">
+<form id="filter-form" method="get" action="<mt:var name="mt_url">">
+    <input type="hidden" name="__mode" value="<mt:var name="mode">" />
+    <mt:if name="id">
+    <input type="hidden" name="id" value="<mt:var name="id" escape="url">" />
+    </mt:if>
+    <mt:if name="is_power_edit">
+    <input type="hidden" name="is_power_edit" value="1" />
+    </mt:if>
+    <input id="filter" type="hidden" name="filter" value="" />
+    <input id="filter_val" type="hidden" name="filter_val" value="" />
+</form>
+<form id="filter-select-form" method="get" onsubmit="return execFilter(this)">
+    <div class="filter">
+        <div id="filter-title">
+            <mt:if name="filter_key">
+                <strong><__trans phrase="Showing only: [_1]" params="<$mt:var name="filter_label" escape="html"$>"></strong>
+                <a class="filter-link" href="<mt:var name="script_url">?__mode=<mt:var name="mode">&amp;id=<mt:var name="id" escape="url">">[ <__trans phrase="Remove filter"> ]</a>
+            <mt:else>
+                <mt:if name="filter">
+                <mt:else>
+                    <strong><__trans phrase="All stream actions"></strong>
+                    <a class="filter-link" href="javascript:void(0)" onclick="toggleFilter()">[ <__trans phrase="change"> ]</a>
+                </mt:if>
+            </mt:if>
+        </div>
+        <div id="filter-select" class="page-title" style="display: none">
+            <__trans phrase="Show only actions where">
+            <select id="filter-col" name="filter" onchange="setFilterCol(this.options[this.selectedIndex].value); enableFilterButton(this)">
+                <!-- option value="stream">stream</option -->
+                <option value="service"><__trans phrase="service"></option>
+                <option value="visible"><__trans phrase="visibility"></option>
+            </select>
+            <__trans phrase="is">
+            <span id="filter-visible">
+                <select id="visible-val" name="filter_val" onchange="enableFilterButton()">
+                    <option value="hide"><__trans phrase="hidden"></option>
+                    <option value="show"><__trans phrase="shown"></option>
+                </select>
+            </span>
+            <span id="filter-service">
+                <select id="service-val" name="filter_val" onchange="enableFilterButton()">
+                    <mt:loop name="services">
+                        <option value="<mt:var name="service_id">"><mt:var name="service_name"></option>
+                    </mt:loop>
+                </select>
+            </span>
+
+            <span class="buttons">
+                <button
+                    id="filter-button"
+                    onclick="return execFilter(getByID('filter-select-form'))"
+                    type="submit"
+                    ><__trans phrase="Filter"></button>
+                <button
+                    onclick="toggleFilter(); return false"
+                    type="submit"
+                    ><__trans phrase="Cancel"></button>
+            </span>
+        </div>
+    </div>
+</form>
+    </div>
+</div>
+
+<mtapp:listing type="profileevent" default="<__trans phrase="No events could be found.">" empty_message="<__trans phrase="No events could be found.">">
+    <mt:if name="__first__">
+        <thead>
+            <tr>
+                <th class="cb"><input type="checkbox" id="select-all-checkbox" name="id-head" value="all" class="select" /></th>
+                <th class="status si">
+                    <img src="<mt:var name="static_uri">images/status_icons/invert-flag.gif" alt="<__trans phrase="Status">" title="<__trans phrase="Status">" width="9" height="9" />
+                </th>
+                <th class="event primary-col"><__trans phrase="Event"></th>
+                <th class="service"><span class="service-icon"><__trans phrase="Service"></span></th>
+                <th class="date"><__trans phrase="Created"></th>
+                <th class="view"><__trans phrase="View"></th>
+            </tr>
+        </thead>
+        <tbody>
+    </mt:if>
+    <tr class="<mt:if name="__odd__">odd<mt:else>even</mt:if>">
+        <td class="cb">
+            <input type="checkbox" name="id" value="<mt:var name="id">" class="select" />
+        </td>
+        <td class="status si status-<mt:if name="visible">publish<mt:else>pending</mt:if>">
+            <img src="<mt:var name="static_uri">images/spacer.gif" width="13" height="9" alt="<mt:if name="visible"><__trans phrase="Shown"><mt:else><__trans phrase="Hidden"></mt:if>" />
+        </td>
+        <td class="event">
+            <mt:var name="as_html" remove_html="1">
+        </td>
+        <td class="service">
+            <span class="service-icon service-<mt:var name="type" escape="html">"><mt:var name="service" escape="html"></span>
+        </td>
+        <td class="date">
+            <span title="<mt:var name="created_on_time_formatted">">
+                <mt:if name="dates_relative">
+                    <mt:var name="created_on_relative">
+                <mt:else>
+                    <mt:var name="created_on_formatted">
+                </mt:if>
+            </span>
+        </td>
+        <td class="view si status-view">
+            <mt:if name="url">
+                <a href="<mt:var name="url" escape="html">" target="<__trans phrase="_external_link_target">" title="<__trans phrase="View action link">"><img src="<mt:var name="static_uri">images/spacer.gif" alt="<__trans phrase="View action link">" width="13" height="9" /></a>
+            <mt:else>
+                &#160;
+            </mt:if>
+        </td>
+    </tr>
+</mtapp:listing>
+
+<mt:include name="include/footer.tmpl">

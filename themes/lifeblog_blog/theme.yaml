@@ -1,0 +1,127 @@
+#
+# LifeBlog Theme for Blog.
+#
+# Design by Mika Naniwada & GAMO, Toshihirro.
+# IA by GAMO, Toshihirro.
+# MarkUp by Yasuhisa Yanagi
+# Create Theme by Naoaki Onozaki.
+#
+# License Under Creative Commons Attribution-Share Alike 2.1 Japan
+#
+id: lifeblog_blog
+label: LifeBlogのテーマ
+name: LifeBlogのテーマ
+version: 1.0
+author_link: http://www.sbcr.jp/
+author_name: ソフトバンククリエイティブ
+class: blog
+description: |
+  LifeBlogブログのためのテーマです。
+  このテーマはソフトバンククリエイティブより出版された、書籍「Movable Type 5 実践テクニック」のサンプルとして作成されました。
+  ライセンスは『Creative Commons - 表示-継承 2.1 日本』となります。
+thumbnail_file: life-blog.png
+thumbnail_file_medium: life-blog-medium.png
+thumbnail_file_small: life-blog-small.png
+elements: 
+  blog_static_files: 
+    component: core
+    importer: blog_static_files
+    data: 
+      - images
+  default_folders: 
+    component: core
+    importer: default_folders
+    data: 
+      images: 
+        label: 画像
+  template_set: 
+    component: core
+    importer: template_set
+    data: 
+      base_path: templates
+      label: LifeBlogブログテーマ
+      templates: 
+        archive: 
+          entry_listing: 
+            label: ブログ記事リスト
+            mappings: 
+              category: 
+                archive_type: Category
+                file_template: "%c/%i"
+                preferred: 1
+              monthly: 
+                archive_type: Monthly
+                file_template: "%y/%m/%i"
+                preferred: 1
+        index: 
+          feed_recent: 
+            label: 最新記事のフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          javascript: 
+            label: JavaScript
+            outfile: js/mt.js
+            rebuild_me: 1
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+          rsd: 
+            label: RSD
+            outfile: rsd.xml
+            rebuild_me: 1
+        individual: 
+          entry: 
+            label: ブログ記事
+            mappings: 
+              individual: 
+                archive_type: Individual
+                file_template: "%c/%b/%i"
+                preferred: 1
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+        widget: 
+          calendar: 
+            label: カレンダー
+          category_archive_list: 
+            label: カテゴリアーカイブ
+          monthly_archive_list: 
+            label: 月別アーカイブ
+          powered_by: 
+            label: Powered By
+          recent_assets: 
+            label: アイテム
+          recent_entries: 
+            label: 最近のブログ記事
+          syndication: 
+            label: 購読
+          tag_cloud: 
+            label: タグクラウド
+        widgetset: 
+          blog_activity: 
+            label: アクティビティ
+            order: 1000
+            widgets: 
+              - カレンダー
+              - アイテム
+              - Powered By
+              - 購読
+          blog_archives: 
+            label: アーカイブ
+            order: 1000
+            widgets: 
+              - 最近のブログ記事
+              - カテゴリアーカイブ
+              - 月別アーカイブ
+              - タグクラウド

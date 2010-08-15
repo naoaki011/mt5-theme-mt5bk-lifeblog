@@ -1,0 +1,32 @@
+■リスト2-12　条件分岐コード
+-------------------------ここから↓-------------------------
+<meta name="description" content="<mt:If name="page _ archive"><mt:Ignore>ウェブページでのみ表示ココから</mt:Ignore><$mt:PageExcerpt remove _ html="1" trim="1"$><mt:Ignore>ウェブページでのみ表示ココまで</mt:Ignore><mt:ElseIf name="entry _ archive"><mt:Ignore>ブログ記事でのみ表示ココから</mt:Ignore><$mt:EntryBody words="80" trim="1"$><mt:Ignore>ブログ記事でのみ表示ココまで</mt:Ignore><mt:ElseIf name="category _ archive"><mt:Ignore>カテゴリアーカイブでのみ表示ココから</mt:Ignore><$mt:CategoryDescription trim="1"$><mt:Ignore>カテゴリアーカイブでのみ表示ココまで</mt:Ignore><mt:ElseIf name="datebased _ only _ archive"><mt:Ignore>月別アーカイブでのみ表示ココから</mt:Ignore><$mt:ArchiveTitle$> のアーカイブです<mt:Ignore>月別アーカイブでのみ表示ココまで</mt:Ignore><mt:ElseIf name="main _ index"><mt:Ignore>インデックスページでのみ表示ココから</mt:Ignore><mt:If tag="BlogDescription"><$mt:BlogDescription remove _html="1" trim="1"$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteDescription remove _ html="1" trim="1" _ default="このページには概要はありません"$></mt:BlogParentWebsite></mt:If><mt:Ignore>インデックスページでのみ表示ココまで</mt:Ignore></mt:If>" />
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-13　ウェブページ
+-------------------------ここから↓-------------------------
+<mt:SetVar name="metakeywords" value="飛行機, 宇宙機, 航空機">
+<meta name="keywords" content="<$mt:Var name="metakeywords"$><mt:PageIfTagged> ,</mt:PageIfTagged><mt:PageTags glue=" ,"><$mt:TagName></mt:PageTags><mt:If tag="PageKeywords"> ,<$mt:PageKeywords$></mt:If>" />
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-14　ブログ記事
+-------------------------ここから↓-------------------------
+<mt:SetVar name="metakeywords" value="飛行機, 宇宙機, 航空機">
+<meta name="keywords" content="<$mt:Var name="metakeywords"$><mt:EntryCategories> ,<$mt:CategoryLabel></mt:EntryCategories><mt:EntryTags> ,<$mt:TagName></mt:EntryTags><mt:If tag="EntryKeywords"> ,<$mt:EntryKeywords$></mt:If>" />
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-15　カテゴリ
+-------------------------ここから↓-------------------------
+<mt:SetVar name="metakeywords" value="飛行機, 宇宙機, 航空機">
+<meta name="keywords" content="<$mt:Var name="metakeywords"$><mt:SubCategories include_current="1">,<$mt:CategoryLabel$></mt:SubCategories>" />
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-16　Keywords のコード
+-------------------------ここから↓-------------------------
+<mt:SetVar name="metakeywords" value="飛行機, 宇宙機, 航空機">
+<meta name="keywords" content="<mt:If name="page_archive"><mt:Ignore>ウェブページでのみ表示ココから</mt:Ignore><$mt:Var name="metakeywords"$><mt:PageIfTagged> ,</mt:PageIfTagged><mt:PageTags glue=" ,"><$mt:TagName></mt:PageTags><mt:If tag="PageKeywords"> ,<$mt:PageKeywords$></mt:If><mt:Ignore>ウェブページでのみ表示ココまで</mt:Ignore><mt:ElseIf name="entry_archive"><mt:Ignore>ブログ記事でのみ表示ココから</mt:Ignore><$mt:Var name="metakeywords"$><mt:EntryCategories> ,<$mt:CategoryLabel></mt:EntryCategories><mt:EntryTags> ,<$mt:TagName></mt:EntryTags><mt:If tag="EntryKeywords"> ,<$mt:EntryKeywords$></mt:If><mt:Ignore>ブログ記事でのみ表示ココまで </mt:Ignore><mt:ElseIf name="category_archive"><mt:Ignore>カテゴリアーカイブでのみ表示ココから</mt:Ignore><$mt:Var name="metakeywords"$><mt:SubCategories include_current="1">,<$mt:CategoryLabel$></mt:SubCategories><mt:Ignore>カテゴリアーカイブでのみ表示ココまで</mt:Ignore><mt:Else><mt:Ignore>以外のページで表示ココから</mt:Ignore><$mt:Var name="metakeywords"$><mt:Ignore>以外のページで表示ココまで</mt:Ignore></mt:If>" />
+-------------------------ここまで↑-------------------------

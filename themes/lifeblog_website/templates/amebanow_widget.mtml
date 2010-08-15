@@ -1,0 +1,17 @@
+<mt:Ignore>暫定版：URLをMTStreamActionURLにセットしていないので、組み合わせで出力</mt:Ignore>
+<mt:ActionStreams service="amebanow" stream="statuses">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_amebanow"><a href="<$mt:Var name="profile_urls{Amebaなう}"$>">Amebaなう</a></h3>
+                        <div class="inner">
+                            <ul class="icon_star_s">
+</mt:If>
+<mt:If name="__counter__" le="10">
+                                <li><a href="http://now.ameba.jp/<$mt:StreamActionVar name="ameba_id"$>/<$mt:StreamActionVar name="via_id"$>/"><$mt:StreamActionTitle$></a><mt:StreamActionVar name="thumb_img" setvar="thumb_url" /><mt:If name="thumb_url"><a href="<$mt:StreamActionVar name="org_img"$>"> +photo</a></mt:If></li>
+</mt:If>
+<mt:If name="__last__">
+                            </ul>
+                        </div><!-- / inner -->
+                   </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>

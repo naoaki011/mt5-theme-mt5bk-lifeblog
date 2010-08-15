@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head><mt:Unless regex_replace="/\s*\n+/g","\n">
+<!--
+  このテーマは「Creative Commons - 表示-継承 2.1 日本（http://creativecommons.org/licenses/by-sa/2.1/jp/）」
+  ライセンスでで配布されており、以下の人々に著作権および権利権があります。
+  蒲生 トシヒロ (GAMO, Toshihiro) http://www.dakiny.com/,
+  小野崎 直昭 (ONOZAKI, Naoaki) http://www.zelazny.mydns.jp/,
+  難波田 実香 (Mika Naniwada) http://kiasma.jp/,
+  柳 泰久 (Yasuhisa Yanagi) http://atstyle.biz/,
+  ※注意：このコメントを削除する行為は上記ライセンスの定めるところにより禁止されています。
+-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="generator" content="<$mt:ProductName version="1"$>" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <link rel="stylesheet" href="<$mt:WebsiteURL$>css/styles.css" type="text/css" media="screen,tv" />
+        <link rev="made" href="mailto:" />
+        <link rel="start" href="<$mt:WebsiteURL$>" title="ホーム" />
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$mt:Link template="rsd"$>" />
+        <title><$mt:WebsiteName escape="html"$></title>
+    </head>
+<mt:OtherProfiles><mt:OtherProfileVar name="uri" escape="html" setvar="profile_url" /><mt:OtherProfileVar name="label" escape="html" setvar="service" /><mt:OtherProfileVar name="ident" setvar="user_id" /><mt:SetVar name="profile_urls{$service}" value="$profile_url" /><mt:SetVar name="user_ids{$service}" value="$user_id" /></mt:OtherProfiles>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="home"><$mt:WebsiteName escape="html"$></h1>
+            <div id="pageBody" class="column3 clearfix">
+                <div class="column3_profile">
+<mt:Authors need_entry="1"><mt:Pages tag="@profile" limit="1">
+                    <div class="box_name clearfix">
+                        <div class="pic">
+<mt:If tag="AuthorUserpic">                    
+                            <p><mt:AuthorUserpicAsset><img src="<mt:AssetThumbnailURL width="96" square="1">" width="96" height="96" alt="画像" /></mt:AuthorUserpicAsset>
+</p>
+<mt:Else>
+                            <p><img src="<$mt:StaticWebPath$>images/default-userpic-90.jpg" width="90" height="90" alt="画像" /></p>
+</mt:If>
+                        </div>
+                        <div class="txt">
+                            <h2><$mt:PageDataEnglishName$></h2>
+<mt:If tag="PageDataRealName">
+                            <h3>(<$mt:PageDataRealName$>)</h3>
+</mt:If>
+<mt:If tag="PageDataSex"><mt:If tag="PageDataSex" ne="非公開">
+                            <p><$mt:PageDataSex$></p>
+</mt:If></mt:If>
+<mt:If tag="PageDataEnglishAddress">
+                            <p><$mt:PageDataEnglishAddress$></p>
+</mt:If>
+                        </div>
+                    </div><!-- / box_name -->
+                    <div class="box_profile">
+                        <h3 class="icon_tag_red">自己紹介</h3>
+                        <div class="inner">
+                            <$mt:PageBody$>
+                        </div><!-- / inner -->
+                    </div><!-- / box_profile -->
+                    <div class="box_profile">
+                        <h3 class="icon_tag_blue">プロフィール</h3>
+                        <div class="inner">
+                            <$mt:Include module="Profiles"$>
+                        </div><!-- / inner -->
+                    </div><!-- / box_profile -->
+</mt:Pages></mt:Authors>
+                    <div class="box_profile">
+                        <h3 class="icon_people">連絡先情報</h3>
+                        <div class="inner">
+<mt:Pages tag="@profile" limit="1">
+<mt:If tag="PageDataMailaddress">
+                            <p class="icon icon_mail"><a href="mailto:<$mt:PageDataMailaddress$>"><$mt:PageDataMailaddress$></a></p>
+</mt:If>
+<mt:If tag="PageDataSkypeAccount">
+                            <p class="icon icon_skype"><a href="<mt:If tag="PageDataSkypeLink"><$mt:PageDataSkypeLink$><mt:Else>callto://<$mt:PageDataSkypeAccount$></mt:If>"><$mt:PageDataSkypeAccount$></a></p>
+</mt:If>
+<mt:If tag="PageDataMixiAccount">
+                            <p class="icon icon_mixi"><a href="<mt:If tag="PageDataMixiLink"><$mt:PageDataMixiLink$><mt:Else>http://mixi.jp/show_friend.pl?id=<$mt:PageDataMixiAccount$></mt:If>"><$mt:PageDataMixiAccount$></a></p>
+</mt:If>
+<mt:If tag="PageDataFacebookAccount">
+                            <p class="icon icon_facebook"><a href="<mt:If tag="PageDataFacebookLink"><$mt:PageDataFacebookLink$><mt:Else>http://www.facebook.com/<$mt:PageDataFacebookAccount$></mt:If>"><$mt:PageDataFacebookAccount$></a></p>
+</mt:If>
+</mt:Pages>
+                        </div><!-- / inner -->
+                    </div><!-- / box_profile -->
+                </div><!-- / column3_profile -->
+                <div class="column3_center">
+                    <$mt:WidgetSet name="My Resource"$>
+                </div><!-- / column3_center -->
+                <div class="column3_right">
+                    <h2 class="icon_earth">My Web Service</h2>
+                    <$mt:WidgetSet name="My Web Service"$>
+                </div><!-- / column3_right -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+    </body>
+</html></mt:Unless>

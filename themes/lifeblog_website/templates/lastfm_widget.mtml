@@ -1,0 +1,16 @@
+<mt:ActionStreams service="lastfm" stream="tracks">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_lastfm"><a href="<$mt:Var name="profile_urls{Last.fm}"$>">last.fm</a></h3>
+                        <div class="inner">
+                            <ul class="icon_arrow">
+</mt:If>
+<mt:If name="__counter__" le="5">
+                                <li><a href="<mt:StreamActionURL escape="html">"><$mt:StreamActionTitle escape="html"$></a></li>
+</mt:If>
+<mt:If name="__last__">
+                            </ul>
+                        </div><!-- / inner -->
+                   </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>

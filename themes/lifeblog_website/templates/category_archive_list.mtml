@@ -1,0 +1,28 @@
+<mt:If tag="BlogCategoryCount" include_blogs="children">
+	<mt:Blogs blog_ids="children">
+		<mt:If tag="BlogCategoryCount">
+			<mt:IfArchiveTypeEnabled archive_type="Category">
+  <div class="box">
+    <h3 class="icon_star">カテゴリ</h3>
+      <div class="inner">
+				<mt:TopLevelCategories>
+					<mt:SubCatIsFirst>
+        <ul class="icon_arrow">
+					</mt:SubCatIsFirst><mt:If tag="CategoryCount">
+          <li><a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$> (<$MTCategoryCount$>)</a>
+					<mt:Else>
+          <li>
+						<$MTCategoryLabel$>
+					</mt:If>
+					<$MTSubCatsRecurse$>
+          </li>
+					<mt:SubCatIsLast>
+        </ul>
+					</mt:SubCatIsLast>
+				</mt:TopLevelCategories>
+      </div><!-- / inner -->
+  </div><!-- / box -->
+			</mt:IfArchiveTypeEnabled >
+		</mt:If>
+	</mt:Blogs>
+</mt:If>

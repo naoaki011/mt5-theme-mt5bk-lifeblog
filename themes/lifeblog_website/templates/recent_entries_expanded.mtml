@@ -1,0 +1,13 @@
+<mt:If tag="BlogEntryCount" include_blogs="children"><$mt:WebsiteURL setvar="site_url" /><mt:Entries lastn="10" include_blogs="children"><mt:EntriesHeader>
+                    <div class="box">
+                        <h3 class="icon_pencil"><a href="<$mt:Var name="site_url"$>blog/">My Blog</a></h3>
+                        <div class="inner">
+                            <ul class="icon_star_s">
+</mt:EntriesHeader>
+                                <li><a href="<$mt:EntryPermalink$>"><$mt:EntryTitle$></a></li>
+<$mt:EntriesFooter>
+                            </ul>
+                            <p class="icon icon_rss"><a href="<$mt:Link template="最新記事のフィード"$>">ATOMを購読</a></p>
+                        </div><!-- / inner -->
+                    </div><!-- / box -->
+</mt:EntriesFooter></mt:Entries></mt:If>

@@ -1,0 +1,41 @@
+このテーマはクリエイティブ・コモンズ・ライセンス 表示・継承 2.1で配布します。学習用として利用ただくだけでなく、商用ウェブのカスタマイズベースでご利用いただく場合も可能です。
+ウェブサイトでご利用の場合、原著作者のクレジットの記述は不要です。ソースコードの記述のみ削除しないでください。
+
+Creative Commons 表示-継承 2.1 日本
+URL http://creativecommons.org/licenses/by-sa/2.1/jp/
+
+下記の人々に著作権があります。
+
+蒲生 トシヒロ (GAMO, Toshihiro)
+Mail: gamo@it-pro.co.jp
+URL：http://www.dakiny.com/
+
+小野崎 直昭 (ONOZAKI, Naoaki)
+Mail: naoaki@orion.ocn.ne.jp
+URL：http://www.zelazny.mydns.jp/
+
+難波田 実香 (Mika Naniwada)
+URL : http://kiasma.jp/
+
+柳 泰久 (Yasuhisa Yanagi)
+URL：http://atstyle.biz/
+
+同梱されるプラグイン等は、ライセンスが異なる場合もありますので、テーマをカスマイズ等されて再配布される場合は、それぞれの作者にお尋ねください。
+
+CKEditorは下記に問い合わせください。
+
+天野 卓（Taku Amano）
+Mail: taku@toi-planning.net
+URL：http://tec.toi-planning.net/
+
+蒲生 トシヒロ（GAMO, Toshihiro）
+Mail: gamo@it-pro.co.jp
+URL：http://www.dakiny.com/
+
+・SortCatFld
+・ActionStreams
+
+は下記に問い合わせください。
+
+藤本 壱 (FUJIMOTO, Hajime)
+URL：http://www.h-fj.com/blog/

@@ -1,0 +1,23 @@
+<mt:ActionStreams service="booklog">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_booklog"><a href="<$mt:Var name="profile_urls{ブクログ}"$>">ブクログ</a></h3>
+                        <div class="inner">
+                            <ul class="icon_arrow">
+</mt:If>
+<mt:If name="__counter__" le="5">
+<mt:StreamActionTitle escape="html" setvar="book_title" />
+                                <li>
+                                    <a href="<mt:StreamActionURL escape="html">"><$mt:Var name="book_title"$></a>
+<mt:StreamActionVar name="thumbnail" setvar="thumb_block" />
+<mt:if name="thumb_block" like="_SL160_">
+                                    <br /><$mt:Var name='thumb_block' strip_linefeeds='1' trim='1' regex_replace='/_SL160_\.jpg/','_SL110_.jpg" alt="'$>
+</mt:if>
+                                </li>
+</mt:If>
+<mt:If name="__last__">
+                            </ul>
+                        </div><!-- / inner -->
+                   </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>

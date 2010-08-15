@@ -1,0 +1,41 @@
+<mt:IfWebsite><mt:BlogID setvar="website_id" /></mt:IfWebsite>
+<mt:IfCommentsActive>
+<mt:If name="comment_preview">
+                    <$mt:Include module="コメント入力フォーム" blog_id="$website_id"$>
+</mt:If>
+<mt:Comments lastn="$comments_per_page">
+<mt:CommentsHeader>
+                    <h4 class="level4" id="comments"><$mt:EntryCommentCount singular="コメント(1)" plural="コメント(#)" none="コメント(0)"$></h4>
+<mt:If tag="EntryCommentCount" gt="$comments_per_page">
+                    <ul id="top-comment-nav">
+                        <li id="top-prev-comments">
+                            <a href="javascript://" id="top-prev-comments-link" title="古いコメント">&lt;&lt;&nbsp;古いコメント</a>
+                        </li>
+                        <li id="top-num-comments"><span id="top-current-comments"></span></li>
+                        <li id="top-next-comments">
+                            <a href="javascript://" id="top-next-comments-link" title="新しいコメント">新しいコメント&nbsp;&gt;&gt;</a>
+                        </li>
+                    </ul>
+</mt:If>
+                    <div id="comments-content" class="comments-content" style="clear: left;">
+</mt:CommentsHeader>
+                        <$mt:Include module="コメント詳細" blog_id="$website_id"$>
+<mt:CommentsFooter>
+                    </div>
+</mt:CommentsFooter>
+</mt:Comments>
+<mt:If tag="EntryCommentCount" gt="$comments_per_page">
+                    <ul id="comment-nav">
+                        <li id="prev-comments">
+                            <a href="javascript://" id="prev-comments-link" title="古いコメント">&lt;&lt;&nbsp;古いコメント</a>
+                        </li>
+                        <li id="num-comments"><span id="current-comments"></span></li>
+                        <li id="next-comments">
+                            <a href="javascript://" id="next-comments-link" title="新しいコメント">新しいコメント&nbsp;&gt;&gt;</a>
+                        </li>
+                    </ul>
+</mt:If>
+<mt:Unless name="comment_preview">
+                    <$mt:Include module="コメント入力フォーム" blog_id="$website_id"$>
+</mt:Unless>
+</mt:IfCommentsActive>

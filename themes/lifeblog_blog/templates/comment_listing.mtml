@@ -1,0 +1,4 @@
+<mt:SetVarBlock name="website_id"><mt:BlogParentWebsite><$mt:BlogID$></mt:BlogParentWebsite></mt:SetVarBlock>{
+"direction": "<mt:Var name="commentDirection">",
+"comments": "<mt:Comments sort_order="$commentDirection"><$mt:Include module="コメント詳細" blog_id="$website_id" replace="\","\\" replace='"','\"' strip_linefeeds="1"$></mt:Comments>"
+}

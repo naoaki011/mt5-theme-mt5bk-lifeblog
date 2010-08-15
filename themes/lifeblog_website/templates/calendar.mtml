@@ -1,0 +1,76 @@
+<mt:Var name="calender_title_format" value="%Y %b">
+<mt:SetVarTemplate name="CalendarDisp">
+    <div class="box">
+        <h3 class="icon_star">カレンダー</h3>
+        <div class="inner">
+            <table class="calendar" cellpadding="0" cellspacing="0" summary="Monthly calendar">
+                <caption>
+<mt:ArchiveNext archive_type="Monthly">
+                    <a href="<$mt:ArchiveLink archive_type="Monthly"$>" title="Newer" rel="nofollow">&laquo;</a>
+</mt:ArchiveNext>
+                    <$mt:Var name="calender_title"$>
+<mt:ArchivePrevious archive_type="Monthly">
+                    <a href="<$mt:ArchiveLink archive_type="Monthly"$>" title="Older" rel="nofollow">&raquo;</a>
+</mt:ArchivePrevious>
+                </caption>
+                <tr>
+                    <th class="sun" title="Sunday">S</th>
+                    <th title="Monday">M</th>
+                    <th title="Tuesday">T</th>
+                    <th title="Wednesday">W</th>
+                    <th title="Thursday">T</th>
+                    <th title="Friday">F</th>
+                    <th class="sat" title="Saturday">S</th>
+                </tr>
+<mt:Calendar month="this">
+<mt:CalendarWeekHeader>
+                <tr>
+</mt:CalendarWeekHeader>
+                    <td<mt:CalendarIfToday> class="today"</mt:CalendarIfToday>>
+<mt:CalendarIfEntries>
+<mt:Entries sort_order="ascend">
+<mt:If name="__counter__" eq="1">
+<mt:IfArchiveTypeEnabled archive_type="Daily">
+                        <a href="<$mt:EntryLink archive_type="Daily"$>" title="<$mt:EntryDate format="%x"$> Archive"  rel="nofollow"><$mt:CalendarDay$></a>
+<mt:Else>
+<mt:IfArchiveTypeEnabled archive_type="Individual">
+                        <a href="<$mt:EntryLink archive_type="Individual"$>" title="<$mt:EntryTitle encode_html="1"$>" rel="nofollow"><$mt:CalendarDay$></a>
+<mt:Else>
+                        <$mt:CalendarDay$>
+</mt:IfArchiveTypeEnabled>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+</mt:Entries>
+</mt:CalendarIfEntries>
+<mt:CalendarIfNoEntries>
+                        <$mt:CalendarDay$>
+</mt:CalendarIfNoEntries>
+<mt:CalendarIfBlank>
+                        &nbsp;
+</mt:CalendarIfBlank>
+                    </td>
+<mt:CalendarWeekFooter>
+                </tr>
+</mt:CalendarWeekFooter>
+</mt:Calendar>
+            </table>
+        </div>
+    </div>
+</mt:SetVarTemplate>
+
+
+<mt:If name="datebased_only_archive">
+<mt:SetVarBlock name="calender_title"><$mt:ArchiveDate language="en" format="$calender_title_format"$></mt:SetVarBlock>
+<$mt:Var name="CalendarDisp"$>
+<mt:Else name="feedback_template">
+<mt:SetVarBlock name="entry_id"><$mt:EntryID$></mt:SetVarBlock>
+<mt:Entries id="$entry_id">
+<mt:SetVarBlock name="calender_title"><$mt:EntryDate language="en" format="$calender_title_format"$></mt:SetVarBlock>
+<$mt:Var name="CalendarDisp"$>
+</mt:Entries>
+<mt:Else>
+<mt:ArchiveList archive_type="Monthly" lastn="1">
+<mt:SetVarBlock name="calender_title"><$mt:ArchiveDate language="en" format="$calender_title_format"$></mt:SetVarBlock>
+<$mt:Var name="CalendarDisp"$>
+</mt:ArchiveList>
+</mt:If>

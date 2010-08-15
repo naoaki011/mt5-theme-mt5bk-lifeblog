@@ -1,0 +1,21 @@
+<mt:ActionStreams service="flickr" stream="photos" sort_by="created_on">
+<mt:StreamActionThumbnailURL setvar="photo_thumb" />
+<mt:If name="photo_thumb">
+<mt:SetVarBlock name="photo_links{$__counter__}"><a href="<$mt:StreamActionURL escape="html"$>"><img src="<$mt:StreamActionThumbnailURL regex_replace="/_t/","_s"$>" alt="<$mt:StreamActionTitle escape="html"$>" width="75" height="75" /></a></mt:SetVarBlock><mt:SetVar name="photo_thumb" value="" />
+</mt:If>
+</mt:ActionStreams>
+
+<mt:Loop name="photo_links" sort_by="key numeric">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_flickr"><a href="<$mt:Var name="profile_urls{Flickr}"$>">Flickr</a></h3>
+                        <ul class="thumbs clearfix">
+</mt:If>
+<mt:If name="__counter__" le="4">
+                            <li><$mt:Var name="__value__"$></li>
+</mt:If>
+<mt:If name="__last__">
+                        </ul>
+                    </div><!-- / box -->
+</mt:If>
+</mt:Loop>

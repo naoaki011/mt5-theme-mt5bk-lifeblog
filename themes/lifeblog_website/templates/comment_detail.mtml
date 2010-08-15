@@ -1,0 +1,15 @@
+                        <div id="comment-<$mt:CommentID$>">
+                            <div>
+                                <$mt:CommentAuthorIdentity$>
+<mt:IfCommentParent>
+                                <$mt:CommentAuthorLink$>から<mt:CommentParent><a href="<$mt:CommentLink$>"><$mt:CommentAuthor$></a></mt:CommentParent>への返信
+<mt:Else>
+                                <$mt:CommentAuthorLink$>
+</mt:IfCommentParent>
+                                | <a href="<$mt:CommentLink$>"><$mt:CommentDate$></a>
+<mt:Unless name="comment_preview"><mt:IfCommentsAccepted>
+                                | <$mt:CommentReplyToLink$>
+</mt:IfCommentsAccepted></mt:Unless>
+                            </div>
+                            <div><$mt:CommentBody$></div>
+                        </div>

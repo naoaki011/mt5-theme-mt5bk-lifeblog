@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="generator" content="<$mt:ProductName version="1"$>" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <link rel="stylesheet" href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>css/styles.css" type="text/css" media="screen,tv" />
+        <script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var user = <$mt:UserSessionState$>;
+var is_preview = true;
+/* ]]> */
+</script>
+        <title>コメントのプレビュー</title>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="blog"><$mt:WebsiteName escape="html"$></h1>
+            <p id="topicPath"><a href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>">HOME</a> &gt; <a href="<mt:EntryLink>"><$mt:EntryTitle$></a> &gt; コメントのプレビュー</p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+                    <div class="entry">
+                        <h2>コメントのプレビュー</h2>
+                        <$mt:Include module="コメント詳細"$>
+                    </div><!-- / entry -->
+                    <$mt:Include module="コメント入力フォーム"$>
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="メインサイドバー"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+    </body>
+</html>
+
+

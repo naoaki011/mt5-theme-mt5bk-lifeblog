@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head><mt:Unless regex_replace="/\s*\n+/g","\n">
+        <$mt:Include module="ヘッダー"$>
+<mt:SetVar name="comments_per_page" value="50" />
+<mt:If tag="EntryCommentCount" gt="$comments_per_page">
+    <script type="text/javascript">
+         MT.entryID = <$mt:PageID$>;
+         MT.commentsPerPage = <$mt:Var name="comments_per_page"$>;
+         MT.entryCommentCount = <$mt:EntryCommentCount$>;
+         MT.commentIds = [<mt:Comments sort_order="ascend" glue=","><mt:CommentID></mt:Comments>];
+    </script>
+</mt:If>
+        <title><$mt:PageTitle escape="html"$> - <$mt:WebsiteName escape="html"$></title>
+    </head>
+    <body>
+        <ul id="skip">
+            <li><a href="./#navG">ナビゲーションへ</a></li>
+            <li><a href="./#pageBody">コンテンツへ</a></li>
+        </ul>
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <$mt:Include module="ナビゲーション"$>
+                <$mt:Include module="検索"$>
+            </div><!-- / header -->
+            <h1 class="blog"><$mt:WebsiteName escape="html"$></h1>
+            <p id="topicPath"><a href="<$mt:WebsiteURL$>">HOME</a> &gt; <$mt:PageTitle escape="html"$></p>
+            <div id="pageBody" class="column2 clearfix">
+                <div class="column2_main">
+                    <div class="entry">
+                        <h2><mt:EntryIfTagged tag="@profile" include_private="1">自己紹介<mt:Else><$mt:PageTitle escape="html"$></mt:EntryIfTagged></h2>
+                        <p class="data"><$mt:PageModifiedDate format="%Y年%b月%e日%A %H:%M"$> | <$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="0 Comment"$> | <$mt:EntryTrackbackCount singular="1 Trackback" plural="# Trackbacks" none="0 Trackback"$></p>
+<$mt:PageBody$>
+<$mt:PageMore$>
+                    </div><!-- / entry -->
+<mt:EntryIfTagged tag="@profile" include_private="1">
+                    <div class="entry">
+                        <h3>プロフィール</h3>
+                        <$mt:Include module="Profiles"$>
+                    </div>
+                    <div class="entry profile">
+                        <h3>利用サービス</h3>
+<mt:If tag="PageDataMailaddress">
+                        <p class="icon icon_mail"><a href="mailto:<$mt:PageDataMailaddress$>" /><$mt:PageDataMailaddress$></a></p>
+</mt:If>
+<mt:If tag="PageDataSkypeAccount">
+                        <p class="icon icon_skype"><a href="<mt:If tag="PageDataSkypeLink"><$mt:PageDataSkypeLink$><mt:Else>callto://<$mt:PageDataSkypeAccount$></mt:If>"><$mt:PageDataSkypeAccount$></a></p>
+</mt:If>
+<mt:If tag="PageDataMixiAccount">
+                        <p class="icon icon_mixi"><a href="<mt:If tag="PageDataMixiLink"><$mt:PageDataMixiLink$><mt:Else>http://mixi.jp/show_friend.pl?id=<$mt:PageDataMixiAccount$></mt:If>"><$mt:PageDataMixiAccount$></a></p>
+</mt:If>
+<mt:If tag="PageDataFacebookAccount">
+                        <p class="icon icon_facebook"><a href="<mt:If tag="PageDataFacebookLink"><$mt:PageDataFacebookLink$><mt:Else>http://www.facebook.com/<$mt:PageDataFacebookAccount$></mt:If>"><$mt:PageDataFacebookAccount$></a></p>
+</mt:If>
+                    </div>
+</mt:EntryIfTagged>
+<mt:EntryIfTagged>
+                    <div class="entry_meta">
+                        <$mt:Include module="タグ"$>
+                    </div><!-- / entry_meta -->
+</mt:EntryIfTagged>
+                    <$mt:Include module="トラックバック"$>
+                    <$mt:Include module="コメント"$>
+                </div><!-- / column2_main -->
+                <div class="column2_side clearfix">
+                    <div class="column">
+                        <$mt:WidgetSet name="メインサイドバー"$>
+                    </div><!-- / column -->
+                    <div class="column">
+                        <$mt:WidgetSet name="アクティビティ"$>
+                    </div><!-- / column -->
+                </div><!-- / column2_side -->
+            </div><!-- / pageBody -->
+            <$mt:Include module="フッター"$>
+        </div><!-- / wrapper -->
+    </body>
+</html></mt:Unless>

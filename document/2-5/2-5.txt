@@ -1,0 +1,43 @@
+■リスト2-8　ウィジェットのためのコード
+-------------------------ここから↓-------------------------
+<mt:ActionStreams service="website">
+<mt:If name="__first__">
+    <div class="box">
+        <h3 class="icon_website"><a href="<$mt:Var name="profile _ urls{WebSite}"$>">WebSite</a></h3>
+        <div class="inner">
+            <ul class="icon_arrow">
+</mt:If>
+<mt:If name="__counter__" le="5">
+                <li><$mt:StreamActionDate format="%Y 年%m 月%d 日"$>:<a href="<mt:StreamActionURL escape="html">"><$mt:StreamActionTitle escape="html"$></a></li>
+</mt:If>
+<mt:If name="__last__">
+            </ul>
+        </div><!-- / inner -->
+    </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-9　CSS 追加のコード
+-------------------------ここから↓-------------------------
+.icon_website{background:url(../blogimg/icon/icon_website.png) 15px center no-repeat #ffffff;}
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-10　CRON ジョブのシェルスクリプト
+-------------------------ここから↓-------------------------
+#!/bin/sh
+cd /virtual/dakiny/public_html/mt
+/usr/bin/perl ./tools/run-periodic-tasks
+exit
+-------------------------ここまで↑-------------------------
+
+
+■リスト2-11　CORESERVER ＆ Xrea での例
+-------------------------ここから↓-------------------------
+#!/bin/sh
+cd /virtual/dakiny/public_html/lifeblog.hippos.jp/mt5
+/usr/bin/perl ./tools/run-periodic-tasks
+exit
+-------------------------ここまで↑-------------------------

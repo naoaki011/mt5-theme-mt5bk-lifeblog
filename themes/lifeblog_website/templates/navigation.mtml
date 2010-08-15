@@ -1,0 +1,5 @@
+                <ul id="navG" class="clearfix">
+                    <li<mt:IfWebsite><mt:If name="main_index"> class="current"</mt:If></mt:IfWebsite>><a href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>">HOME</a></li>
+                    <li<mt:IfWebsite><mt:Else> class="current"</mt:IfWebsite>><a href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>blog/">BLOG</a></li>
+                    <li<mt:If name="page_title" eq="サイトマップ"> class="current"</mt:If>><a href="<mt:IfWebsite><$mt:WebsiteURL$><mt:Else><mt:BlogParentWebsite><$mt:WebsiteURL$></mt:BlogParentWebsite></mt:IfWebsite>sitemap/">SITEMAP</a></li>
+                </ul>

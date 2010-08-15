@@ -1,0 +1,17 @@
+<mt:ActionStreams service="nicovideo">
+<mt:If name="__first__">
+                    <div class="box">
+                        <h3 class="icon_nicovideo"><a href="<$mt:Var name="profile_urls{ニコニコ動画}"$>">ニコニコ動画</a></h3>
+                        <div class="inner">
+                            <ul>
+</mt:If>
+<mt:If name="__counter__" le="5">
+<mt:SetVarBlock name="videoid"><$mt:StreamActionURL regex_replace="/^http\://www\.nicovideo\.jp/watch/(sm|nm|)([0-9]{1,9})/","$1$2" $></mt:SetVarBlock>
+                                <li><object width="170" height="160" type="text/html" data="http://www.nicovideo.jp/thumb/<$mt:Var name="videoid"$>" style="border:solid 1px #CCC; "><$mt:StreamActionTitle escape="html"$></object></li>
+</mt:If>
+<mt:If name="__last__">
+                            </ul>
+                        </div><!-- / inner -->
+                   </div><!-- / box -->
+</mt:If>
+</mt:ActionStreams>

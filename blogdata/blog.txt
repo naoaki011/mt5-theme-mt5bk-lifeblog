@@ -1,0 +1,1197 @@
+AUTHOR: dakiny
+TITLE: エントリーで利用するタグ表示一覧
+BASENAME: post
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: その他
+CATEGORY: その他
+DATE: 01/07/2010 02:57:50 AM
+-----
+BODY:
+<h3>
+	見出し3&lt;h3&gt;</h3>
+<p>
+	これは、タグ&lt;p&gt;です。<br />
+	テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+<h4>
+	見出し4&lt;h4&gt;</h4>
+<p>
+	これは、タグ&lt;p&gt;です。<br />
+	テキストが入ります。テキストが入ります。テキストが入ります。テキストが入りま す。テキストが入ります。</p>
+<h5>
+	見出し5&lt;h5&gt;</h5>
+<p>
+	これは、タグ&lt;p&gt;です。<br />
+	テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+<hr />
+<p>
+	&uarr;罫線&lt;hr /&gt;</p>
+<h3>
+	引用・書式付</h3>
+<h4>
+	引用&lt;blockquote&gt;</h4>
+<blockquote>
+	引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。</blockquote>
+<h4>
+	書式付き文章&lt;pre&gt;</h4>
+<pre>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+
+テキストが入ります。テキストが入ります。
+テキストが入ります。テキストが入ります。テキストが入ります。
+テキストが入ります。テキストが入ります。
+
+テキストが入ります。テキストが入ります。テキストが入ります。</pre>
+<hr />
+<h3>
+	リスト（箇条書き） List</h3>
+<h4>
+	Unsorted list</h4>
+<ul>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+	<li>
+		これは、&lt;ul&gt;です。
+		<ul>
+			<li>
+				これは、&lt;ul&gt;です。</li>
+			<li>
+				これは、&lt;ul&gt;です。
+				<ul>
+					<li>
+						これは、&lt;ul&gt;です。</li>
+					<li>
+						これは、&lt;ul&gt;です。</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+	<li>
+		これは、&lt;ul&gt;です。</li>
+</ul>
+<h4>
+	Ordered list</h4>
+<ol>
+	<li>
+		これは、&lt;ol&gt;です。</li>
+	<li>
+		これは、&lt;ol&gt;です。</li>
+	<li>
+		これは、&lt;ol&gt;です。</li>
+</ol>
+<h4>
+	定義型リスト Definition list</h4>
+<dl>
+	<dt>
+		タイトル</dt>
+	<dd>
+		定義</dd>
+	<dt>
+		車名</dt>
+	<dd>
+		トヨタ カローラ</dd>
+	<dt>
+		年式</dt>
+	<dd>
+		20年式</dd>
+	<dt>
+		価格</dt>
+	<dd>
+		160万円</dd>
+</dl>
+<hr />
+<h3>
+	表</h3>
+<table summary="summary要素">
+	<tbody>
+		<tr>
+			<th>
+				これは、<br />
+				&lt;table&gt;<br />
+				&lt;th&gt;です。</th>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+		</tr>
+		<tr>
+			<th>
+				これは、<br />
+				&lt;table&gt;の<br />
+				&lt;th&gt;です。</th>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+			<td>
+				これは、<br />
+				&lt;table&gt;です。</td>
+		</tr>
+	</tbody>
+</table>
+-----
+EXTENDED BODY:
+
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: B-25 ミッチェル（Mitchell）
+BASENAME: b-25_mitchell
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 爆撃機
+CATEGORY: 爆撃機
+DATE: 01/27/2010 11:23:48 AM
+TAGS: B-25,アメリカ陸空軍,ノーズアート
+-----
+BODY:
+<p>
+	<img alt="B-25 Mitchell" class="mt-image-none" height="375" src="/blog/images/080531-F-2907C-057.jpg" style="" width="500" /></p>
+<h3>
+	第二次世界大戦を通じて利用された爆撃機</h3>
+<p>
+	B-25 ミッチェルはノースアメリカン社によって開発・製造されたアメリカ合衆国の双発中型爆撃機で、第二次世界大戦中のあらゆる局面において用いられ、連合軍に敵対するドイツと日本に対する攻撃に使用された。派生型を含めた総生産数は約10,000機。<br />
+	「ミッチェル」の愛称はアメリカ陸軍の将校ウィリアム・ミッチェル准将にちなむ。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="B-25 Mitchell" class="mt-image-none" height="348" src="/blog/images/B-25J_Pacific_Prowler_flyin.jpg" style="" width="500" /></p>
+<h3>
+	ドーリットル空襲で一躍有名になる</h3>
+<p>
+	初飛行は、1940年8月19日。主翼は中翼配置であり、レシプロエンジンを2基装備している。尾翼は双垂直尾翼である。<br />
+	B-25が爆撃機として日本で一躍有名になったのは、1942年4月18日のドーリットル空襲 (太平洋戦争でアメリカによる初の日本本土空襲) のときであった。名称は空襲の指揮官の名前に由来する。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: B-29 ボックスカー（Bockscar）
+BASENAME: b-29_bockscar
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 爆撃機
+CATEGORY: 爆撃機
+DATE: 01/26/2010 10:42:45 AM
+TAGS: B-29,アメリカ空軍,ノーズアート
+-----
+BODY:
+<p>
+	<img alt="Bockscar　B-29" class="mt-image-none" height="375" src="/blog/images/050809-F-1234P-003.jpg" style="" width="500" /></p>
+<h3>
+	長崎に原子爆弾を投下した爆撃機</h3>
+<p>
+	ボックスカー (Bockscar) は、第二次世界大戦時のアメリカ軍第509混成部隊に所属したB-29爆撃機の愛称で、原爆投下任務に使用されるために特別改修を受けたシルバープレートと呼ばれるのB-29、15機中の1機。第二次世界大戦末期の1945年（昭和20年）8月9日、午前11時02分に長崎県長崎市にプルトニウム型原子爆弾ファットマンを投下したことで知られる。<br />
+	ノーズアートの羽の生えた有蓋貨車とネーミングは、本来のパイロット、ボック少佐の愛車Bock&#39;s Car『』と有蓋貨車の『Box Car』を引っかけたもの。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="Bockscar　B-29" class="mt-image-none" height="319" src="/blog/images/071030-F-1234S-021.jpg" style="" width="500" /></p>
+<h3>
+	長崎市への原子爆弾投下</h3>
+<p>
+	1945年8月9日の攻撃当日ボックスカーは「グレート・アーティスト」の機長チャールズ・スウィーニー少佐と副操縦士チャールズ・ドナルド・オルバリー大尉、フレッド・オリビ中尉によって操縦された。<br />
+	第一目標は福岡県小倉市（現：北九州市）であったが、小倉市到着後天候も悪くなり目標を小倉市から第二目標である長崎市に変更し1回目の爆撃航程の際に雲の切れ間から目視できた地点に原爆を投下した。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: VFA-103 ジョリーロジャース（Jolly　Rogers）
+BASENAME: vfa-103_jollyrogers
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 戦闘飛行隊
+CATEGORY: 戦闘飛行隊
+DATE: 01/25/2010 07:39:58 AM
+TAGS: F-14,F/A-18,アメリカ海軍
+-----
+BODY:
+<p>
+	<img alt="18F Super Hornet" class="mt-image-none" height="374" src="/blog/images/f18_01.jpg" style="" width="500" /></p>
+<h3>
+	二代目海賊旗</h3>
+<p>
+	第103戦闘攻撃飛行隊(Strike Fighter Squadron One Zero Three)はアメリカ海軍の戦闘攻撃飛行隊。通常VFA-103と表記される。ニックネームはジョリーロジャース。元々はスラッガーズ（強打者）というニックネームだったが、1995年10月1日に解隊したVF-84からニックネームとスカル&amp;クロスボーンのマーキングを引き継いだ。現在利用する戦闘機はF/A-18F Super Hornet。</p>
+-----
+EXTENDED BODY:
+
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: アポロ13号（Apollo 13）
+BASENAME: apollo_13
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 宇宙
+CATEGORY: 宇宙
+DATE: 01/23/2010 05:31:28 AM
+TAGS: NASA,アポロ計画
+-----
+BODY:
+<p>
+	<img alt="Apollo_13_crew" class="mt-image-none" height="361" src="/blog/images/Apollo_13_crew_postmissio.jpg" style="" width="500" /></p>
+<h3>
+	宇宙からの奇跡の生還</h3>
+<p>
+	1970年4月11日、米中部時間13時13分、ジェームズ・A・ラヴェル船長、ジョン・L・スワイガート司令船操縦士、フレッド・W・ヘイズ月着陸船操縦士を乗せたサターンV 型ロケットは、ケネディ宇宙センター第39複合発射施設から発射された。二日後、電線が短絡し火花が散ったことにより機械船の酸素タンクが爆発し、飛行士たちは深刻な電力と水の不足に見舞われることになった。<br />
+	司令船には独自のバッテリーと酸素が搭載されているが、それらは大気圏再突入の際に必要になるもので、使用することはできない。そのため彼らは着陸船を救命ボートとして使用し、電力を限界まで抑え、飲料水の摂取を極力控えることによって無事地球に生還した。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="Apollo_13_Prime_Crew" class="mt-image-none" height="375" src="/blog/images/Apollo_13_Prime_Crew.jpg" style="" width="500" /></p>
+<h3>
+	輝かしい失敗</h3>
+<p>
+	<br />
+	13号は月面着陸は達成できなかったものの、関係者が迅速かつ果敢に対応して危機を乗り越えたことにより、「輝かしい失敗」と呼ばれている。飛行士と地上の管制官たちは、その功績により自由のメダル大統領勲章を受章した。<br />
+	写真んはアポロ13号クルー、左から、 船長のジム・ラベル、 ジャック・スワイガート、 フレッド・ヘイズ。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: チャック・イェーガー（Chuck Yeager）
+BASENAME: chuck_yeager
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: パイロット
+CATEGORY: パイロット
+DATE: 01/22/2010 04:09:52 AM
+-----
+BODY:
+<p>
+	<img alt="チャック・イェーガー" class="mt-image-none" height="396" src="/blog/images/757px-Cochrane_with_Yeager.jpg" style="" width="500" /></p>
+<h3>
+	初めて音速を超えた男</h3>
+<p>
+	映画『ライトスタッフ』の主人公としても有名な、チャールズ・エルウッド・&quot;チャック&quot;・イェーガー（Charles Elwood &quot;Chuck&quot; Yeager、1923年2月13日 - ）は、アメリカ陸軍及びアメリカ空軍の軍人。最終階級は、空軍准将。世界で初めて水平飛行で音速を超えた人物として知られる。<br />
+	第二次大戦中はエースパイロットとして知られた。戦後は創設されたアメリカ空軍に移り、NACA (NASAの前身) の高速飛行計画に基づいて作成された機体ベルX-1 のテスト・パイロットに選出され音速の壁に挑むことになる。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="Bell X-1A_" class="mt-image-none" height="375" src="/blog/images/Bell_X-1A_in_flight.jpg" style="" width="500" /></p>
+<h3>
+	音の壁への挑戦</h3>
+<p>
+	1947年10月14日、イェーガーが搭乗するXS-1はマッハ1.06を記録、人類初の有人超音速飛行となった。彼がXS-1で飛行して通算50回目での記録であった。<br />
+	音速突破の2日前には落馬が原因で肋骨を骨折していたが、そのことを隠しXS-1に搭乗したエピソードは映画『ライトスタッフ』にも描 かれている。</p>
+<p>
+	<img alt="Chuck Yeager" class="mt-image-none" height="375" src="/blog/images/Chuck_Yeager.jpg" style="" width="500" /></p>
+<h3>
+	グラマラス・グレニス</h3>
+<p>
+	彼はXS-1の愛称に妻の名前&quot;グラマラス・グレニス(Glamorous Glennis) &quot;を付けており、この機体は現在ワシントンD.C.の国立航空宇宙博物館に展示されている。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: フライングタイガース（Flying Tigers）
+BASENAME: flying_tigers
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 戦闘飛行隊
+CATEGORY: 戦闘飛行隊
+DATE: 01/21/2010 09:22:25 AM
+TAGS: P-40,ノーズアート,戦闘飛行隊
+-----
+BODY:
+<p>
+	<img alt="フライングタイガース P-40 ウォーホーク" class="mt-image-none" height="335" src="/blog/images/Warhawks_flying_in_formatio.jpg" style="" width="500" /></p>
+<h3>
+	アメリカ合衆国義勇軍による「飛虎」たち</h3>
+<p>
+	フライングタイガース(Flying Tigers)は1941年から1942年にかけて、日中戦争時に中国国民党軍を支援したアメリカ合衆国義勇軍(American Volunteer Group,AVG)の愛称で、中華民国軍の関係者が彼らを「飛虎」と名づけたことによる。パイロットは中立の立場から、義勇兵という形で集められたが、実質はアメリカ空軍のパイロットが殆どであった。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="Flying Tigers P40" class="mt-image-none" height="375" src="/blog/images/070921-F-9999X-107.jpg" style="" width="500" /></p>
+<h3>
+	迷彩にサメのノーズアートを施したあまりに有名な機体</h3>
+<p>
+	フライングタイガースといえば機体デザインがあまりにも有名。彼らの用いたカーチス P-40の機体にはイギリス空軍式の迷彩にサメをイメージしたペイントが施され、後部胴体にはウォルト・ディズニーのロイ・ウィリアムズによりデザインされた虎に翼が生えた記章が描かれた。</p>
+<p>
+	<img alt="フライングタイガースのパイロット" class="mt-image-none" height="374" src="/blog/images/Flying_tigers_pilot.jpg" style="" width="500" /></p>
+<h3>
+	フライングターガースの解散</h3>
+<p>
+	AGVは数的に常に劣勢であったにもかかわらず、加藤隼戦闘隊をはじめとする日本軍とよく戦ったが、日米開戦により義勇軍の意味はなくなり、軍の命令により1942年7月解散する。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: アポロ11号（Apollo 11）
+BASENAME: apollo_11
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 宇宙
+CATEGORY: 宇宙
+DATE: 01/20/2010 06:25:58 AM
+TAGS: アポロ計画,月
+-----
+BODY:
+<p>
+	<img alt="月面に立つアポロ11号のクルー" class="mt-image-none" height="375" src="/blog/images/GPN-2001-000013.jpg" style="" width="500" /></p>
+<h3>
+	人類月に立つ</h3>
+<p>
+	1969年7月16日、ニール・アームストロング船長、マイケル・コリンズ司令船操縦士、エドウィン・ユージーン・バズ・オルドリンJr.月着陸船操縦士を乗せたサターンV 型ロケットはケネディ宇宙センター第39複合発射施設から発射され、7月20日、アームストロングとオルドリンは人類として初めて月面に降り立った。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="アポロ11号のクルー" class="mt-image-none" height="374" src="/blog/images/GPN-2000-001164.jpg" style="" width="500" /></p>
+<h3>
+	これは一人の人間にとっては小さな一歩だが、人類にとっては偉大な飛躍である</h3>
+<p>
+	1969年7月21日02:56、月面に歴史的な第一歩を記したアームストロングはによるあまりに有名な言葉。写真はアポロ11号のクルー。左からアームストロング船長、コリンズ飛行士、オルドリン飛行士。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: ジム・ラヴェル（Jim Lovell）
+BASENAME: jim_lovell
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: パイロット
+CATEGORY: パイロット
+DATE: 02/05/2010 06:50:54 AM
+TAGS: NASA,アポロ計画,宇宙飛行士,月
+-----
+BODY:
+<p>
+	<img alt="Jim Lovell" class="mt-image-none" height="375" src="/blog/images/James_Lovell.jpg" style="" width="500" /></p>
+<h3>
+	月面に立てなかった不運の英雄</h3>
+<p>
+	ジム・ラヴェル（ジェームズ・アーサー・ラヴェル・ジュニア、James Arthur Lovell, Jr.、1928年3月25日 - ）はアメリカ合衆国の宇宙飛行士、海軍軍人。海軍での最終階級は、大佐。途中で起きた事故により月着陸を断念したアポロ13号の船長として知られる。<br />
+	ジェミニ7号、ジェミニ12号、アポロ8号、アポロ13号と4回の宇宙飛行をおこなったベテラン宇宙飛行士でスカイラブ計画が始まるまで、ラヴェルが人類の中でいちばん長い時間を宇宙空間で過ごした人間であった。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="損傷したアポロ13号の機械船" class="mt-image-none" height="375" src="/blog/images/GPN-2000-001119.jpg" style="" width="500" /></p>
+<h3>
+	アポロ13号奇跡の生還</h3>
+<p>
+	映画『アポロ13』でも描かれたアポロ13号は、船長ラヴェル/司令船操縦士ジャック・スワイガート/月着陸船操縦士フレッド・ヘイズを乗せて1970年4月11日に打ち上げられた。ラヴェルの4度目で最後の宇宙飛行である。しかし途中で機械船に爆発が起き、月着陸どころか生きて地球へ戻れるかも危ぶまれた。<br />
+	打ち上げから3日後の4月14日、月に向かって地球から月までの10分の1ほど行った所で事故が起きた。機械船の液体酸素タンクが爆発したのである。乗組員の呼吸だけでなくコンピュータなどの電源にも必要な酸素がほとんど失われた。機械を冷やすための冷却水不足にも悩まされ、さらには定員二人の月着陸船に三人が乗船することによって二酸化炭素が増加、二酸化炭素中毒による生命危機も危ぶまれた。<br />
+	着陸船を救命ボートとして使用し、電力を限界まで抑え、飲料水の摂取を極力控えることによって無事地球に生還した。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: VF-84 ジョリーロジャース（Jolly　Rogers）
+BASENAME: vf-84_jolly_rogers
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 戦闘飛行隊
+CATEGORY: 戦闘飛行隊
+DATE: 01/12/2010 01:23:00 AM
+TAGS: F-14,VF-84,アメリカ海軍
+-----
+BODY:
+<p>
+	<img alt="F-14　VF-84" class="mt-image-none" height="259" src="/blog/images/F-14-vf-84.jpg" style="" width="500" /></p>
+<h3>
+	空に翻る海賊旗</h3>
+<p>
+	第84戦闘飛行隊(Fighter Squadron Eighty Four)はかつて存在したアメリカ海軍の戦闘飛行隊。ニックネームはジョリーロジャース（海賊旗）。VF-84と表記されることが多い。映画『ファイナル・カウントダウン』に登場したため、スカル&amp;クロスボーンと呼ばれる特徴的なマーキングとともに知名度および人気の高い飛行隊である。1995年10月1日に解隊により、ニックネームとスカル&amp;クロスボーンのマーキングを第103戦闘攻撃飛行隊がを引き継いだ。</p>
+-----
+EXTENDED BODY:
+
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: P-51 マスタング（Mustang）
+BASENAME: p-51_mustang
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 戦闘機
+CATEGORY: 戦闘機
+DATE: 01/15/2010 03:45:16 AM
+TAGS: P-51,ノーズアート
+-----
+BODY:
+<p>
+	<img alt="P-51D-30_NA_Glamorous_Gal" class="mt-image-none" height="374" src="/blog/images/P-51D-30_NA_Glamorous_Gal.jpg" style="" width="500" /></p>
+<h3>
+	第二次大戦中の米軍最高戦闘機</h3>
+<p>
+	P-51は、アメリカのノースアメリカンにより製造されたレシプロ戦闘機で、愛称はマスタング (Mustang)。航続力、高高度性能、運動性を与えられ、多くの戦功を残し、第二次大戦中、最高の戦闘機の一つに評価されている。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="P-51 Mustang" class="mt-image-none" height="375" src="/blog/images/070304-F-3208M-238.jpg" style="" width="500" /></p>
+<h3>
+	その姿、空のキャデラック！</h3>
+<p>
+	映画ではスティーヴン・スピルバーグの監督による第二次大戦の映画『太陽の帝国』や『プライベート・ライアン』にP-51が登場し、『太陽の帝国』では少年時代のクリスチャン・ベール演じる主人公が「P-51は空のキャデラックだ」と感嘆するシーンがある。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: B-17 メンフィス・ベル（Memphis Bel）
+BASENAME: b-17_memphis_bel
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 爆撃機
+CATEGORY: 爆撃機
+DATE: 01/17/2010 11:00:16 PM
+TAGS: B-17,B17,ノーズアート,爆撃機
+-----
+BODY:
+<p>
+	<img alt="写真" class="mt-image-none" height="375" src="/blog/images/entry_01.jpg" style="" width="500" /></p>
+<h3>
+	メンフィス・ベル（Memphis Bel）とは</h3>
+<p>
+	シリアル・ナンバー41-24485のB-17Fの愛称、B-17は第二次世界大戦時のアメリカ陸軍航空隊の主力大型爆撃機。アメリカ合衆国、ボーイング社の製造。「4発大型爆撃機は鈍重なので夜間爆撃にしか使えない」という当時の常識を破った画期的な高速爆撃機で、別名、フライングフォートレス（空の要塞）</p>
+
+-----
+EXTENDED BODY:
+<p>
+	<img alt="写真" class="mt-image-none" height="375" src="/blog/images/entry_02.jpg" style="" width="500" /></p>
+<h3>
+	メンフィス・ベルの由来</h3>
+<p>
+	メンフィス在住のマーガレット・ポークが親戚に会いに来た際、第91爆撃航空群はワシントン州で訓練を実施中であり、この時ロバート・モーガン大尉と知り合った。このマーガレット・ポークがメンフィス在住だったことから、メンフィス・ベル号と名付けられた。<br />
+	ノーズアートは、当時流行したカレンダーのマスコットガールであったペティガールズで、機種右側は赤い水着、左側は青い水着が描かれていた。描画したのは、当時第91爆撃航空群にいたトニー・スターシャである。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: P-38 ライトニング（Lightning）
+BASENAME: p-38_lightning
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 戦闘機
+CATEGORY: 戦闘機
+DATE: 01/19/2010 10:18:16 AM
+TAGS: P-38,アメリカ陸軍
+-----
+BODY:
+<p>
+	<img alt="P-38 Lightning" class="mt-image-none" height="375" src="/blog/images/Glacier_Girl.jpg" style="" width="500" /></p>
+<h3>
+	高速・重武装の双胴の悪魔</h3>
+<p>
+	P-38 ライトニングはロッキード社が開発し、1939年にアメリカ陸軍に制式採用された戦闘機。愛称であるライトニング（Lightning）は稲妻。<br />
+	最高速度580km/h以上という軍からの要求をみたす高速力を出すために発動機を2基搭載した双発・双胴となり、中央胴に搭乗員が乗り込む設計となった。<br />
+	ヨーロッパ戦線ではドイツの戦闘機の機能向上にともない劣勢を強いられ、P-47、P-51といった優秀な新鋭戦闘機に切り替えられ活躍する期間は長くはなかったが、太平洋戦線では航続距離が長いことが洋上飛行時の利点となること、日本の戦闘機はドイツに比べれば低速であったことから、終戦まで第一線で活躍し、日本軍機相手にキルオーダーの1位と2位の記録を残した。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="P-38 Lightning" class="mt-image-none" height="375" src="/blog/images/020903-o-9999b-060.jpg" style="" width="500" /></p>
+<h3>
+	元祖戦闘爆撃機</h3>
+<p>
+	単発・単座戦闘機に対して旋回半径では劣り、配備当初は低空での格闘戦を得意とする零戦や隼などに低空に誘い込まれ苦戦したが、P-38の性能を生かした一撃離脱戦法に徹する戦法が確立されると、立場は逆転し日本機が不利になっていった。<br />
+	P-47、P-51の配備に伴い戦闘機としては短命に終わったが、搭載量が大きいことから第二次大戦後期は爆撃機として利用された。<br />
+	第二次大戦当時の戦術にはなかったが、現在の戦い方が当時にあれば戦闘爆撃機として大活躍したであろう。</p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: CV-22/MV-22 オスプレイ（Osprey）
+BASENAME: v-22_osprey
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 輸送機
+CATEGORY: 輸送機
+DATE: 01/30/2010 09:13:27 AM
+TAGS: CV-22,MV-22,V-22,VTOL,アメリカ海兵隊,アメリカ空軍,ティルトローター
+-----
+BODY:
+<p>
+	<img alt="V-22 Osprey" class="mt-image-none" height="375" src="/blog/images/CV-22_Osprey_02.jpg" style="" width="500" /></p>
+<h3>
+	ヘリコプターと飛行機の利点を併せ持つ垂直離着陸機</h3>
+<p>
+	V-22はローター（プロペラに似た回転翼）を、機体に対して傾ける（ティルトする）ことで垂直離着陸やホバーリリングを可能とするティルトローター機。<br />
+	愛称はオスプレイ（ミサゴ）で、初飛行は1989年。アメリカ空軍とアメリカ海兵隊で採用され、空軍仕様がCV-22、海軍仕様がHV-22、海兵隊仕様のコードネームで呼ばれる。</p>
+-----
+EXTENDED BODY:
+<p>
+	<img alt="CV-22 Osprey" class="mt-image-none" height="375" src="/blog/images/CV-22_Osprey_01.jpg" style="" width="500" /></p>
+<h3>
+	スペック</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="height: 316px; width: 497px;" summary="V-22スペック">
+	<tbody>
+		<tr>
+			<th scope="row">
+				全長</th>
+			<td>
+				17.47 m（ピトー管含まず）</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全幅</th>
+			<td>
+				25.54 m（ローター含む）</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全高</th>
+			<td>
+				6.63 mVTOL時）</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				航続距離</th>
+			<td>
+				3,700km</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				定員</th>
+			<td>
+				24名</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				空虚重量</th>
+			<td>
+				15.032 t</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最大離陸重量</th>
+			<td>
+				23.981 t</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最高速度</th>
+			<td>
+				565 km/h</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				乗員</th>
+			<td>
+				24名</td>
+		</tr>
+	</tbody>
+</table>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: B-2 Spirit
+BASENAME: b-2_spirit
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 爆撃機
+CATEGORY: 爆撃機
+DATE: 01/31/2010 06:11:33 AM
+TAGS: アメリカ空軍,ステルス機,戦略爆撃機
+-----
+BODY:
+<p>
+	<img alt="B-2 Spirit" height="374" src="/blog/images/B-2_Spirit_01.jpg" width="500" /></p>
+<h3>
+	同重量の金と同価値といわれる世界一高価な軍用機</h3>
+<p>
+	B-2はアメリカ空軍のステルス戦略爆撃機。水平尾翼および垂直尾翼がない全翼機と言う特殊な形をしており、愛称はスピリット(魂)。この機は同重量の金と同価値といわれるほど非常に高価で、少数しか生産されていないため、1機ごとに「Spirit of New York」等のパーソナルネームを与えられている。</p>
+
+-----
+EXTENDED BODY:
+<h3>
+	概要</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 497px;" summary="B-2 概要">
+	<tbody>
+		<tr>
+			<th scope="row">
+				用途</th>
+			<td>
+				爆撃機</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				分類</th>
+			<td>
+				戦略爆撃機</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				メーカー</th>
+			<td>
+				ノースロップ・グラマン</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				運用者</th>
+			<td>
+				アメリカ合衆国（アメリカ空軍）</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				初飛行</th>
+			<td>
+				1989年7月17日</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				生産台数</th>
+			<td>
+				21機</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				運用開始年</th>
+			<td>
+				1997年4月</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				運用状況</th>
+			<td>
+				現役</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<img alt="空中給油をうけるB-2 Spirit" height="375" src="/blog/images/B-2_Spirit_02.jpg" width="500" /></p>
+<h3>
+	スペックデーター</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 497px;" summary="B-2 スペックデーター">
+	<tbody>
+		<tr>
+			<th scope="row">
+				全長</th>
+			<td>
+				21.03m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全幅</th>
+			<td>
+				52.43m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全高</th>
+			<td>
+				5.18m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最高速度</th>
+			<td>
+				約1,000km/h</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				巡航速度</th>
+			<td>
+				M0.8</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				空虚重量</th>
+			<td>
+				約45t</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最大離陸重量</th>
+			<td>
+				約170t</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				ペイロード</th>
+			<td>
+				約18t</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				エンジン</th>
+			<td>
+				GE F118-GE-100 ターボファンエンジン &times;4基</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				エンジン推力</th>
+			<td>
+				77.0kN</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				航続距離</th>
+			<td>
+				約12,000km</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				乗員</th>
+			<td>
+				2名</td>
+		</tr>
+	</tbody>
+</table>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: MQ-9 リーパー（Reaper）
+BASENAME: mq-9_reaper
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 多目的機
+CATEGORY: 多目的機
+DATE: 02/01/2010 04:11:23 AM
+TAGS: MQ-9,NASA,アメリカ空軍,無人航空機
+-----
+BODY:
+<p>
+	<img alt="MQ-9_Reaper" class="mt-image-none" height="375" src="/blog/images/MQ-9_Reaper_01.jpg" style="" width="500" /></p>
+<h3>
+	遠隔操縦で攻撃をおこなう無人軍用機</h3>
+<p>
+	MQ-9 リーパー（Reaper,「（魂を）刈り取る者」の意味から英語で「死神」の意）はジェネラル・アトミックス社製の軍用無人航空機。長い航続距離と高い監視能力および攻撃能力を持つハンターキラー無人機である。原型となったMQ-1 プレデターよりも機体が大型化され、性能が大幅に向上している。</p>
+
+-----
+EXTENDED BODY:
+<p>
+	<img alt="翼下にヘルファイア4発とペイブウェイ II 2発を搭載したMQ-9" class="mt-image-none" height="374" src="/blog/images/MQ-9_Reaper_03.jpg" style="" width="500" /></p>
+<h3>
+	武装</h3>
+<p>
+	両翼に3つずつ計6つのハードポイントが存在し、増槽、ヘルファイア対戦車ミサイル、ペイブウェイIIレーザー誘導爆弾、スティンガー空対空ミサイルを搭載可能（将来的にはJDAMやサイドワインダーの搭載も予定）である。<br />
+	<br />
+	ハードポイントの各パイロンはそれぞれ搭載重量が異なっていて、一番内側の2つが1500ポンド（680kg） 、その1つ外側の2つが600ポンド（270kg）、一番機体から外側の2つが200ポンド（90kg）となっている。</p>
+<p>
+	<img alt="MQ-1_Predator_controlroom" class="mt-image-none" height="375" src="/blog/folder23/MQ-1_Predator_controlroom.jpg" style="" width="500" /></p>
+<h3>
+	仕様</h3>
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width: 497px;" summary="MQ-9 仕様">
+	<tbody>
+		<tr>
+			<th scope="row">
+				メーカー</th>
+			<td>
+				ジェネラル・アトミックス</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				操縦員(遠隔操作)</th>
+			<td>
+				2名(パイロット1名、センサー員1名)</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				エンジン</th>
+			<td>
+				Honeywell TP331-10Tターボプロップエンジン</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				エンジン出力</th>
+			<td>
+				950 SHP</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最大燃料搭載量</th>
+			<td>
+				1,815 kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				長さ</th>
+			<td>
+				11m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				翼幅</th>
+			<td>
+				20m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				空虚重量</th>
+			<td>
+				2,223kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最大離陸重量</th>
+			<td>
+				4,760kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最高高度</th>
+			<td>
+				15,000m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				運用高度</th>
+			<td>
+				7,500m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				滞空時間</th>
+			<td>
+				14～28時間</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				航続距離</th>
+			<td>
+				5,926 km</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				有効積載量</th>
+			<td>
+				1,700 kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最高速度</th>
+			<td>
+				482km/h</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				巡航速度</th>
+			<td>
+				276-313km/h</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				レーダー</th>
+			<td>
+				AN/APY-8 Lynx II</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				センサー</th>
+			<td>
+				MTS-B</td>
+		</tr>
+	</tbody>
+</table>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: SR-71 ブラックバード（BlackBird）
+BASENAME: sr-71_blackbird
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 偵察機 
+CATEGORY: 偵察機 
+DATE: 02/02/2010 06:46:04 PM
+TAGS: NASA,アメリカ空軍,ステルス機
+-----
+BODY:
+<p>
+	<img alt="SR-71 ブラックバード（BlackBird）" class="mt-image-none" height="374" src="/blog/images/SR-71_Blackbird_01.jpg" style="" width="500" /></p>
+<h3>
+	世界最速レコードを持つ超音速偵察機</h3>
+<p>
+	<img alt="SR-71_Blackbird_02.jpg" class="mt-image-right" height="179" src="/blog/images/SR-71_Blackbird_02.jpg" style="margin: 0pt 0pt 20px 20px; float: right;" width="240" />SR- 71は1966年から1999年にアメリカ空軍で利用された超音速・高高度偵察機で、愛称はブラックバード。1976年7月27日3,529.56km/h(実用高度25,929m)の最高速度記録を出した。<br />
+	U-2偵察機の後継として高空からの写真偵察を行うことを任務として開発され、高度 25,000m以上においてマッハ３以上の超音速飛行を行うことで、ミサイル迎撃をも回避する。<br />
+	ただし、SR-71が高速を発揮できるのは、大気密度 が低い高高度領域の話で、高度1万メートル以下では多くの戦闘機に及ばない。強度が弱く背面飛行もできない。危険な任務に従事してきたにもかかわらず1機も撃墜されたことがないが、機体 強度の特性や操縦の困難さにより、着陸の失敗といった事故で多くの機体が失われている。<br />
+	ミサイルの追撃をも許さない超音速機も時代の流れには勝てず、偵察衛星技術の向上に伴うにつれ、次第にその存在価値を失い、1989年の退役決定後、全機が退役した。</p>
+-----
+EXTENDED BODY:
+<h3>
+	スペックデーター</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 497px;" summary="SR-71スペックデーター">
+	<tbody>
+		<tr>
+			<th scope="row">
+				全長</th>
+			<td>
+				32.73m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全幅</th>
+			<td>
+				16.94m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全高</th>
+			<td>
+				5.63m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				自重</th>
+			<td>
+				25,630kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				全備重量</th>
+			<td>
+				63,500kg</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				最高速度</th>
+			<td>
+				3,529.56km/h</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				巡航速度</th>
+			<td>
+				M3.2</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				巡航高度</th>
+			<td>
+				25,900m</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				乗員</th>
+			<td>
+				2名</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				武装</th>
+			<td>
+				なし</td>
+		</tr>
+	</tbody>
+</table>
+<h3>
+	参考サイト</h3>
+<p>
+	<span style="font-family: arial,helvetica,sans-serif;"><strong>AF.mil（The Official Web site of the United States Air Force ）</strong></span><br />
+	<span style="font-family: arial,helvetica,sans-serif;"><a href="http://www.af.mil/">http://www.af.mil/</a></span></p>
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
+AUTHOR: dakiny
+TITLE: F-117 ナイトホーク（Nighthawk）
+BASENAME: f-117_nighthawk
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: richtext
+ALLOW PINGS: 1
+PRIMARY CATEGORY: 攻撃機
+CATEGORY: 攻撃機
+DATE: 01/29/2010 09:40:10 AM
+TAGS: F-117,アメリカ空軍,ステルス機
+-----
+BODY:
+<p>
+	<img alt="F-117 Nighthawk" class="mt-image-none" height="375" src="/blog/images/F-117_Nighthawk_03.jpg" style="" width="500" /></p>
+<h3>
+	世界初の実用的なステルス機</h3>
+<p>
+	F-117はアメリカ合衆国が開発したステルス攻撃機で、世界初の実用的なステルス機として1981年に初飛行を行った。主に夜間作戦に使用され機体表面の塗装も真っ黒なことから、愛称はナイトホークと名付けられた。<br />
+	ステルス（stealth）とは、軍用機、軍艦、戦闘車両等の兵器をレーダー等のセンサー類から探知され難くする軍事技術の総称である。<br />
+	64機生産され湾岸戦争をはじめいくつかの実戦で使用されたが、生産コスト・維持コストの高さから2008年をもって全機が退役した。<br />
+	とはいえ、その特徴あるデザインから、今でもステルス機といえばF117の名をあげる人も少なくないだろう。</p>
+-----
+EXTENDED BODY:
+
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+
+-----
+--------
