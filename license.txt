@@ -1,41 +1,41 @@
-���̃e�[�}�̓N���G�C�e�B�u�E�R�����Y�E���C�Z���X �\���E�p�� 2.1�Ŕz�z���܂��B�w�K�p�Ƃ��ė��p�����������łȂ��A���p�E�F�u�̃J�X�^�}�C�Y�x�[�X�ł����p���������ꍇ���\�ł��B
-�E�F�u�T�C�g�ł����p�̏ꍇ�A������҂̃N���W�b�g�̋L�q�͕s�v�ł��B�\�[�X�R�[�h�̋L�q�̂ݍ폜���Ȃ��ł��������B
+このテーマはクリエイティブ・コモンズ・ライセンス 表示・継承 2.1で配布します。学習用として利用ただくだけでなく、商用ウェブのカスタマイズベースでご利用いただく場合も可能です。
+ウェブサイトでご利用の場合、原著作者のクレジットの記述は不要です。ソースコードの記述のみ削除しないでください。
 
-Creative Commons �\��-�p�� 2.1 ���{
+Creative Commons 表示-継承 2.1 日本
 URL http://creativecommons.org/licenses/by-sa/2.1/jp/
 
-���L�̐l�X�ɒ��쌠������܂��B
+下記の人々に著作権があります。
 
-���� �g�V�q�� (GAMO, Toshihiro)
+蒲生 トシヒロ (GAMO, Toshihiro)
 Mail: gamo@it-pro.co.jp
-URL�Fhttp://www.dakiny.com/
+URL：http://www.dakiny.com/
 
-����� ���� (ONOZAKI, Naoaki)
+小野崎 直昭 (ONOZAKI, Naoaki)
 Mail: naoaki@orion.ocn.ne.jp
-URL�Fhttp://www.zelazny.mydns.jp/
+URL：http://www.zelazny.mydns.jp/
 
-��g�c ���� (Mika Naniwada)
+難波田 実香 (Mika Naniwada)
 URL : http://kiasma.jp/
 
-�� �׋v (Yasuhisa Yanagi)
-URL�Fhttp://atstyle.biz/
+柳 泰久 (Yasuhisa Yanagi)
+URL：http://atstyle.biz/
 
-���������v���O�C�����́A���C�Z���X���قȂ�ꍇ������܂��̂ŁA�e�[�}���J�X�}�C�Y������čĔz�z�����ꍇ�́A���ꂼ��̍�҂ɂ��q�˂��������B
+同梱されるプラグイン等は、ライセンスが異なる場合もありますので、テーマをカスマイズ等されて再配布される場合は、それぞれの作者にお尋ねください。
 
-CKEditor�͉��L�ɖ₢���킹���������B
+CKEditorは下記に問い合わせください。
 
-�V�� ��iTaku Amano�j
+天野 卓（Taku Amano）
 Mail: taku@toi-planning.net
-URL�Fhttp://tec.toi-planning.net/
+URL：http://tec.toi-planning.net/
 
-���� �g�V�q���iGAMO, Toshihiro�j
+蒲生 トシヒロ（GAMO, Toshihiro）
 Mail: gamo@it-pro.co.jp
-URL�Fhttp://www.dakiny.com/
+URL：http://www.dakiny.com/
 
-�ESortCatFld
-�EActionStreams
+・SortCatFld
+・ActionStreams
 
-�͉��L�ɖ₢���킹���������B
+は下記に問い合わせください。
 
-���{ �� (FUJIMOTO, Hajime)
-URL�Fhttp://www.h-fj.com/blog/
+藤本 壱 (FUJIMOTO, Hajime)
+URL：http://www.h-fj.com/blog/
